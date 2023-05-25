@@ -1,0 +1,20 @@
+.video {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
+    top: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 3px solid lightgray;
+}
+
+.home-logo {
+    /* position: absolute; */
+    z-index: 2;
+    object-fit: contain;
+    /* width: 100vw; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

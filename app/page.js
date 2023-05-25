@@ -1,95 +1,95 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
+'use client'
+import React, { useContext, useEffect, useState } from 'react'
+import Link from 'next/link'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Video from "../app/components/Video";
+import styles from './globals.css';
+import { Context } from './context/appContext'
+
+import Image from 'next/image';
+
+const Home = () => {
+
+  const { store, actions } = useContext(Context)
+
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
+  const movies = [
+    <Image width={400} height={600} className="movie" src={"/img/the-taking-of-pelham-one-two-three-1974.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/apocalypse-now-1979.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-evil-dead-1981.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/being-there-1979.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/carrie-1976.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/chinatown-1974.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/close-encounters-of-the-third-kind-1977.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/coffy-1973.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/deliverance-1972.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/enter-the-dragon-1973.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/frenzy-1972.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/moonraker-1979.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/network-1976.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-elephant-man-1980.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-french-connection-1971.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-long-goodbye-1973.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-outlaw-josey-wales-1976.jpeg"} alt=""></Image>,
+    <Image width={400} height={600} className="movie" src={"/img/the-texas-chain-saw-massacre-1974.jpeg"} alt=""></Image>,
+
+  ];
+
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className="home-body">
+        <div className="welcome">
+          <Video />
+        </div>
+        <div className="scroll-search-results">
+          <ul style={{ listStyleType: "none" }}>
+            {movies.map((result, i) => {
+              return (
+                <li key={i}>
+                  <span>{result}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className='category'>
+          <span className='category-title'>COMEDY</span>
+        </div>
+        <div className="scroll-search-results">
+          <ul style={{ listStyleType: "none" }}>
+            {movies.map((result, i) => {
+              return (
+                <li key={i}>
+                  <span>{result}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className='category'>
+          <span className='category-title'>HORROR</span>
+        </div>
+        <div className="scroll-search-results">
+          <ul style={{ listStyleType: "none" }}>
+            {store.movies.map((result, i) => {
+
+              return (
+                <li key={i}>
+                  <Image width={400} height={600} className="movie" src={result} alt=""></Image>,
+                </li>
+
+              );
+            })}
+          </ul>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </main >
   )
 }
+
+export default Home;

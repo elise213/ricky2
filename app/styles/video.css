@@ -1,20 +1,15 @@
-.video {
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(55%);
-    top: 0;
-    padding: 0;
-    margin: 0;
-    border-bottom: 3px solid lightgray;
-}
-
 .home-logo {
     /* position: absolute; */
     z-index: 2;
     object-fit: contain;
-    /* width: 100vw; */
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.iframe-video {
+    overflow: hidden;
+    width: 100vw;
+    object-fit: cover;
 }

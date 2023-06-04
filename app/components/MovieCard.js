@@ -40,9 +40,12 @@ const MovieCard = ({ movie }) => {
                         <div className='streaming-container'>
 
                             <div className='streaming-logo-price-container'>
-                                <Link href="https://www.apple.com/itunes/">
+                                <Link href="https://www.Netflix.com/">
                                     <div className='streaming-logo-price-container '>
-                                        <Image width={90} height={60} className="streaming-logo" src={"/streaming/disney.jpg"} alt="" />
+                                        {/* <Image width={90} height={60} className="streaming-logo" src={"https://drive.google.com/file/d/1tTpAt1iF9Bb3W6Osn9evQfJxAXSCpJRO"} alt="" /> */}
+                                        <iframe src="https://drive.google.com/file/d/1tTpAt1iF9Bb3W6Osn9evQfJxAXSCpJRO/preview" width="90" height="60"></iframe>
+
+
                                         <p>$8.99</p>
                                     </div>
                                 </Link>

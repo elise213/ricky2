@@ -29,6 +29,7 @@ p {
     bottom: 0;
     width: 100%;
     min-height: 400px;
+    margin-right: 20px;
 }
 
 .review-div {

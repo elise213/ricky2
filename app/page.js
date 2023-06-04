@@ -135,9 +135,9 @@ const Home = () => {
                       height={600}
                       className="movie"
                       src={result.image}
-                      alt=""
                       onClick={() => openModal(result)}
-                    />
+                    ></Image>
+
                     {/* Button trigger modal */}
                     <button
                       type="button"

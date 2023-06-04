@@ -7,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         {
           title: "The Taking of Pelham one two three",
           year: "1974",
-          image: "/img/the-taking-of-pelham-one-two-three-1974.jpeg",
+          image: "/img/the-taking-of-pelham-one-two-three-1974 (1).jpeg",
           category: "suspense"
         },
         {

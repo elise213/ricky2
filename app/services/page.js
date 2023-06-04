@@ -8,7 +8,8 @@ const Services = () => {
 
     const fetchMovies = async () => {
         const API_KEY = "8d5bbe4bdd4dd79888b6856f5b0f8868";
-        const baseUrl = "http://api.themoviedb.org/3/discover/movie";
+        const baseUrl = "https://api.themoviedb.org/3/discover/movie";
+        // const baseUrl = "http://api.themoviedb.org/3/discover/movie";
         const releaseDateFrom = "2023-06-01";
         const releaseDateTo = "2023-06-03";
         const sortOption = "primary_release_date.asc";

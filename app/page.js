@@ -1,7 +1,6 @@
 'use client'
 import React, { useContext, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.bundle';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { Context } from './context/appContext';
@@ -12,12 +11,11 @@ const Home = () => {
   const { store, actions } = useContext(Context);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }
-  }, []);
-
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  //   }
+  // }, []);
 
   const openModal = (movie) => {
     setSelectedMovie(movie);
@@ -106,7 +104,6 @@ const Home = () => {
                       className="movie"
                       src={result.image}
                       alt=""
-                      onClick={() => openModal(result)}
                     />
                     {/* Button trigger modal */}
                     <button
@@ -138,7 +135,6 @@ const Home = () => {
                       height={600}
                       className="movie"
                       src={result.image}
-                      onClick={() => openModal(result)}
                     ></Image>
 
                     {/* Button trigger modal */}

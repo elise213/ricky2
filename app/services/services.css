@@ -1,9 +1,8 @@
 .services {
-    font-family: Open Sans, Arial, sans-serif;
-    /* font-family: "Urbanist", sans-serif; */
+    font-family: "Urbanist", sans-serif;
     letter-spacing: 2px;
     margin: 20px 90px 20px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .services-container {
@@ -20,4 +19,13 @@
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-size: 20px;
+    ;
+}
+
+.title {
+    color: red;
 }

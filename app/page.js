@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+// import 'bootstrap/dist/js/bootstrap.bundle';
 import Video from "../app/components/Video";
 import styles from './globals.css';
 import { Context } from './context/appContext';
@@ -12,9 +12,12 @@ const Home = () => {
   const { store, actions } = useContext(Context);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  // useEffect(() => {
-  //   require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    }
+  }, []);
+
 
   const openModal = (movie) => {
     setSelectedMovie(movie);

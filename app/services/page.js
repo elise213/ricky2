@@ -104,7 +104,7 @@ const Services = () => {
 
     const handleSearch = () => {
         fetchMetaCritic();
-        fetchLetterboxdRating();
+        // fetchLetterboxdRating();
     };
 
     const formattedSearchTitle = searchTitle.split(' ').join('-');
@@ -130,6 +130,15 @@ const Services = () => {
                         <p>Director: {movies.director}</p>
                         <p>MetaCritic Score: {movies.metaScore}</p>
                         <p>MetaCritic User Score: {movies.userScore}</p>
+                        <p>Letterboxd{" "}
+                            <a
+                                href={`  https://letterboxd.com/search/${formattedSearchTitle}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {searchTitle}
+                            </a>
+                        </p>
                         <p>Description: {movies.description}</p>
                         <p>Genre: {movies.genre}</p>
                         <p>Release date: {movies.releaseDate}</p>
@@ -153,17 +162,7 @@ const Services = () => {
                                 {searchTitle}
                             </a>
                         </p>
-                        <p>
-                            Letterboxd{" "}
-                            <a
 
-                                href={`  https://letterboxd.com/search/${formattedSearchTitle}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {searchTitle}
-                            </a>
-                        </p>
 
                         <p>
                             <Image
@@ -184,7 +183,7 @@ const Services = () => {
                         <h2>Recent Reviews</h2>
                         {movies.recentReviews.map((review, index) => (
                             <div key={`review-${index}`}>
-                                <p>Name: {review.name}</p>
+                                <p>{review.name}</p>
                                 <ul>
                                     <li>Grade: {review.grade}</li>
                                     <li>Body: {review.body}</li>
@@ -195,7 +194,7 @@ const Services = () => {
                         <h2>Recent User Reviews</h2>
                         {movies.recentUserReviews.map((review, index) => (
                             <div key={`review-${index}`}>
-                                <p>Name: {review.name}</p>
+                                <p>{review.name}</p>
                                 <ul>
                                     <li>Grade: {review.grade}</li>
                                     <li>Body: {review.body}</li>

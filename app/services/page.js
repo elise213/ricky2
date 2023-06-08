@@ -104,7 +104,7 @@ const Services = () => {
 
     const handleSearch = () => {
         fetchMetaCritic();
-        // fetchLetterboxdRating();
+        fetchLetterboxdRating();
     };
 
     const formattedSearchTitle = searchTitle.split(' ').join('-');
@@ -126,7 +126,7 @@ const Services = () => {
                 {movies !== undefined && movies !== null ? (
 
                     <ul>
-                        <p>Title: {movies.title}</p>
+                        <h1>{movies.title}</h1>
                         <p>Director: {movies.director}</p>
                         <p>MetaCritic Score: {movies.metaScore}</p>
                         <p>MetaCritic User Score: {movies.userScore}</p>
@@ -139,7 +139,7 @@ const Services = () => {
                                 {searchTitle}
                             </a>
                         </p>
-                        <p>Description: {movies.description}</p>
+                        <p>{movies.description}</p>
                         <p>Genre: {movies.genre}</p>
                         <p>Release date: {movies.releaseDate}</p>
                         <p>
@@ -185,8 +185,8 @@ const Services = () => {
                             <div key={`review-${index}`}>
                                 <p>{review.name}</p>
                                 <ul>
-                                    <li>Grade: {review.grade}</li>
-                                    <li>Body: {review.body}</li>
+                                    <li><p>Grade: {review.grade}</p></li>
+                                    <li><p>{review.body}</p></li>
                                 </ul>
                             </div>
 
@@ -196,8 +196,8 @@ const Services = () => {
                             <div key={`review-${index}`}>
                                 <p>{review.name}</p>
                                 <ul>
-                                    <li>Grade: {review.grade}</li>
-                                    <li>Body: {review.body}</li>
+                                    <li><p>Grade: {review.grade}</p></li>
+                                    <li><p>{review.body}</p></li>
                                 </ul>
                             </div>
 

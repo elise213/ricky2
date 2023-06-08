@@ -134,6 +134,7 @@ const Services = () => {
                         <p>Genre: {movies.genre}</p>
                         <p>Release date: {movies.releaseDate}</p>
                         <p>Wikipedia <a href={`https://en.wikipedia.org/wiki/${formattedSearchTitle}`}>{searchTitle}</a></p>
+                        <p>Youtube <a href={`https://www.youtube.com/results?search_query=${formattedSearchTitle}+trailer`}>{searchTitle}</a></p>
                         <p>
                             <Image
                                 width={150}

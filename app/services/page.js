@@ -133,8 +133,38 @@ const Services = () => {
                         <p>Description: {movies.description}</p>
                         <p>Genre: {movies.genre}</p>
                         <p>Release date: {movies.releaseDate}</p>
-                        <p>Wikipedia <a href={`https://en.wikipedia.org/wiki/${formattedSearchTitle}`}>{searchTitle}</a></p>
-                        <p>Youtube <a href={`https://www.youtube.com/results?search_query=${formattedSearchTitle}+trailer`}>{searchTitle}</a></p>
+                        <p>
+                            Wikipedia{" "}
+                            <a
+                                href={`https://en.wikipedia.org/wiki/${formattedSearchTitle}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {searchTitle}
+                            </a>
+                        </p>
+                        <p>
+                            Youtube{" "}
+                            <a
+                                href={`https://www.youtube.com/results?search_query=${formattedSearchTitle}+trailer`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {searchTitle}
+                            </a>
+                        </p>
+                        <p>
+                            Letterboxd{" "}
+                            <a
+
+                                href={`  https://letterboxd.com/search/${formattedSearchTitle}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {searchTitle}
+                            </a>
+                        </p>
+
                         <p>
                             <Image
                                 width={150}

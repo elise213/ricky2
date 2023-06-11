@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from './contact.css';
+import Image from "next/image";
 
 const Contact = () => {
     return (
@@ -11,7 +12,7 @@ const Contact = () => {
                         <div className="d-flex justify-content-center flex-direction-column">
                             {/* <p className="consultation"> Schedule a free 15 minute consultation {" "}
                                 <a href="https://calendly.com/d/z5t-v8z-2pr/free-consultation?month=2023-05" className="consultation-link">
-                                    here </a> or send us a message!
+                                here </a> or send us a message!
                             </p> */}
                         </div>
                         {/* <p className="text-center looking-forward" >We look forward to hearing from you!</p> */}
@@ -72,7 +73,7 @@ const Contact = () => {
                                     name="message"
                                     rows="3"
                                 ></textarea>
-                                <button type="submit" className="bio-btn w-100 mt-4 float">
+                                <button type="submit" className="send-button w-100 mt-4 float">
                                     Send
                                 </button>
 
@@ -85,6 +86,7 @@ const Contact = () => {
                     <Map />
                 </div> */}
             </div>
+            <Image className="sticker" src="/../public/img/rewind.png" height={100} width={100} />
         </div >
     );
 };

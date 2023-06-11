@@ -31,9 +31,9 @@ const Navbar = () => {
                     <span className="nav-item">
                         <Link href="/archive" className="nav-btn">ARCHIVE</Link>
                     </span>
-                    <span className="nav-item">
+                    {/* <span className="nav-item">
                         <Link href="/services" className="nav-btn">HADRIAN</Link>
-                    </span>
+                    </span> */}
                     <span className="nav-item">
                         <Link href="/contact" className="nav-btn">CONTACT</Link>
                     </span>

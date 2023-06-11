@@ -5,21 +5,11 @@ import Video from "../app/components/Video";
 import styles from './globals.css';
 import { Context } from './context/appContext';
 import MovieCard from './components/MovieCard';
+import FrontPageCard from './components/FrontPageCard';
 import Image from 'next/image';
 
 const Home = () => {
   const { store, actions } = useContext(Context);
-  const [selectedMovie, setSelectedMovie] = useState(null);
-
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  //   }
-  // }, []);
-
-  const openModal = (movie) => {
-    setSelectedMovie(movie);
-  };
 
   return (
     <main className={styles.main}>
@@ -32,30 +22,13 @@ const Home = () => {
             {store.movies.map((result, i) => (
               <li key={i}>
                 <div>
-                  <Image
-                    width={400}
-                    height={600}
-                    className="movie"
-                    src={result.image}
-                    alt=""
-                    onClick={() => openModal(result)}
-                  />
-                  {/* Button trigger modal */}
-                  <button
-                    type="button"
-                    className="btn learn-more"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    onClick={() => openModal(result)}
-                  >
-                    Learn More
-                  </button>
+                  <FrontPageCard result={result} />
                 </div>
               </li>
             ))}
           </ul>
         </div>
-        <div className='category'>
+        {/* <div className='category'>
           <span className='category-title'>SUSPENSE</span>
         </div>
         <div className="scroll-search-results">
@@ -65,24 +38,7 @@ const Home = () => {
               .map((result, i) => (
                 <li key={i}>
                   <div>
-                    <Image
-                      width={400}
-                      height={600}
-                      className="movie"
-                      src={result.image}
-                      alt=""
-                      onClick={() => openModal(result)}
-                    />
-                    {/* Button trigger modal */}
-                    <button
-                      type="button"
-                      className="btn learn-more"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      onClick={() => openModal(result)}
-                    >
-                      Learn More
-                    </button>
+                    <FrontPageCard result={result} />
                   </div>
                 </li>
               ))}
@@ -98,23 +54,7 @@ const Home = () => {
               .map((result, i) => (
                 <li key={i}>
                   <div>
-                    <Image
-                      width={400}
-                      height={600}
-                      className="movie"
-                      src={result.image}
-                      alt=""
-                    />
-                    {/* Button trigger modal */}
-                    <button
-                      type="button"
-                      className="btn learn-more"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      onClick={() => openModal(result)}
-                    >
-                      Learn More
-                    </button>
+                    <FrontPageCard result={result} />
                   </div>
                 </li>
               ))}
@@ -129,32 +69,16 @@ const Home = () => {
               .filter((movie) => movie.category === "comedy")
               .map((result, i) => (
                 <li key={i}>
-                  <div className='scroll-image-div'>
-                    <Image
-                      width={400}
-                      height={600}
-                      className="movie"
-                      src={result.image}
-                    ></Image>
-
-                    {/* Button trigger modal */}
-                    <button
-                      type="button"
-                      className="btn learn-more"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      onClick={() => openModal(result)}
-                    >
-                      Learn More
-                    </button>
+                  <div>
+                    <FrontPageCard result={result} />
                   </div>
                 </li>
               ))}
           </ul>
-        </div>
+        </div> */}
       </div>
 
-      {selectedMovie && <MovieCard movie={selectedMovie} />}
+
     </main>
   )
 }

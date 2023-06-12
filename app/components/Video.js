@@ -6,7 +6,7 @@ import YouTube from "react-youtube";
 
 const Video = () => {
     return (
-        <div className="w-100 h-25">
+        <div className="video-cont w-100">
             <Image width={500} height={530} className="home-logo" src={"/img/NEWRELEASE.png"} alt=""></Image>
             {/* <video autoPlay loop muted className="video">
                 <source src="videos/smoke.mp4" type="video/mp4" />

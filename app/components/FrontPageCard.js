@@ -24,32 +24,35 @@ const FrontPageCard = (props) => {
             <div className='hilights'>
                 <div className="sticker-and-review">
                     <Sticker className="sticker" sticker={props.result} />
-                    <div>
-                        <p className='hilight-main text-center'>{props.result.title}</p>
+                </div>
+                <div className='center-column'>
+
+                    <p className='hilight-title'>{props.result.title}</p>
+
+
+                    <p className='hilight'>"bla bla bla bla bla bla bla bla bla"</p>
+
+                    <p className='hilight'>First special thing</p>
+                    <p className='hilight'>Second special thing</p>
+                    <p className='hilight'>Third special thing</p>
+                    <div className='d-flex'>
+                    </div>
+                    {/* Button trigger modal */}
+                    <div className="more-button">
+                        <button
+                            type="button"
+                            className="btn learn-more"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            onClick={() => openModal(props.result)}
+                        >
+                            More
+                        </button>
                     </div>
                 </div>
-                <p className='hilight'>"bla bla bla bla bla bla bla bla bla"</p>
-                <p className='hilight'>First special thing</p>
-                <p className='hilight'>Second special thing</p>
-                <p className='hilight'>Third special thing</p>
-                <div className='d-flex'>
-                </div>
-                {/* Button trigger modal */}
-                <div className="more-button">
-                    <button
-                        type="button"
-                        className="btn learn-more"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        onClick={() => openModal(props.result)}
-                    >
-                        More
-                    </button>
-                </div>
+                {selectedMovie && <MovieCard movie={selectedMovie} />}
             </div>
-            {selectedMovie && <MovieCard movie={selectedMovie} />}
-        </div>
-    )
+        </div>)
 }
 
 export default FrontPageCard

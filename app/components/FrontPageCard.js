@@ -14,8 +14,8 @@ const FrontPageCard = (props) => {
     return (
         <div>
             <Image
-                width={400}
-                height={600}
+                width={350}
+                height={500}
                 className="movie"
                 src={props.result.image}
                 alt=""

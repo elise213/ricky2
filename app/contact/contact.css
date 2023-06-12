@@ -57,6 +57,7 @@
     color: salmon;
     font-family: "Urbanist", sans-serif;
     font-size: large;
+    border-radius: 2%;
 }
 
 @media screen and (max-width: 800px) {

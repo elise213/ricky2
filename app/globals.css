@@ -296,37 +296,6 @@
   direction: rtl;
 }
 
-.favorites-col li {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.favorites-col::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.your-favorite-resources {
-  font-size: 1.5rem;
-  text-decoration: underline;
-  margin-top: 20px;
-  padding: 0px;
-}
-
-.favorites-list {
-  text-align: center;
-}
-
-.user-profile-avatar {
-  font-size: 8rem;
-  margin-bottom: 10px;
-}
-
-.favorite-line-item {
-  margin-top: 15px;
-}
-
 .favorite-a-tag:hover {
   color: lightgreen;
   font-family: Arial, Helvetica, sans-serif;
@@ -334,42 +303,22 @@
 
 /* ---------------------------------------------------------------------SEARCH PAGE */
 
-/* .scroll-search-results {
-  overflow-y: auto;
-  overflow: scroll;
-  height: 69.5vh;
-  width: 22vw;
-  direction: rtl;
-  /* padding: 3px; */
-/* display: flex; */
-/* } */
-
-/* .scroll-search-results {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  display: flex;
-  height: 50vh;
-  width: 100%;
-  justify-content: center;
-} */
-
 .scroll-search-results {
   overflow-y: hidden;
   overflow-x: scroll;
   display: flex;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 0px 30px 0px 30px;
+  margin: 50px 30px 0px 30px;
 }
 
 .category-title {
   font-size: 50px;
   font-family: "Urbanist", sans-serif;
   padding-left: 50px;
-
 }
 
 .category {
@@ -380,13 +329,21 @@
   display: flex;
   gap: 3rem;
   margin: 20px;
+  padding: 0;
+  float: left;
+  margin: 0px 20px 0px 0px;
 }
 
-.search-results-full {
+/* .search-results-full {
   flex-direction: column;
   margin: 0;
   width: 96vw;
-}
+ display: flex;
+  width: 90%;
+  margin-top: 30px;
+  padding-bottom: 100px;
+  ;
+} */
 
 .scroll-search-results li {
   padding: 0;
@@ -396,7 +353,8 @@
 }
 
 .scroll-search-results::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: red;
+  margin: 30px;
 }
 
 .map-info {
@@ -405,18 +363,6 @@
   margin-bottom: 20px;
 }
 
-
-.scroll-search-results ul {
-  padding: 0;
-  float: left;
-  margin: 0px 20px 0px 0px;
-}
-
-.search-results-full {
-  display: flex;
-  width: 90%;
-  margin-top: 30px;
-}
 
 .grand-container {
   display: flex;
@@ -441,8 +387,6 @@
   font-family: "Space Mono", Sans-serif;
   line-height: 2;
 }
-
-
 
 /* _____________________________________________________________Selection-*/
 .search-container {
@@ -631,11 +575,11 @@ input[type='checkbox']:after {
     margin: 10px;
   }
 
-  .search-results-full {
+  /* .search-results-full {
     flex-direction: column;
     margin: 0;
     width: 96vw;
-  }
+  } */
 
   .grand-container {
     margin: 0;

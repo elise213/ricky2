@@ -16,15 +16,11 @@
     backdrop-filter: blur(5px);
 }
 
-
 .navbar-toggler {
     float: right;
     box-shadow: none !important;
     border: none !important;
 }
-
-.show {}
-
 
 .nav-content {
     width: 100%;
@@ -83,7 +79,6 @@
 
 /* SMALL SCREENS */
 @media screen and (max-width: 760px) {
-
     .navbar-collapse {
         flex-basis: 100%;
         flex-grow: 1;

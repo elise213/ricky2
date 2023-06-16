@@ -3,8 +3,9 @@ import Image from 'next/image';
 import styles from '../styles/movie-card.css';
 import Link from 'next/link';
 
-const MovieCard = ({ movie }) => {
-    console.log("MOVIE", movie)
+const MovieCard = (props) => {
+
+    console.log("PROPS MODAl", props)
     return (
         <div>
             {/* Modal */}
@@ -12,7 +13,7 @@ const MovieCard = ({ movie }) => {
                 <div className="modal-dialog modal-xxsl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <span className="modal-title" id="exampleModalLabel">{movie.title}</span>
+                            <span className="modal-title" id="exampleModalLabel">{props.result.title}</span>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body d-flex">
@@ -22,9 +23,9 @@ const MovieCard = ({ movie }) => {
                                     width={300}
                                     height={450}
                                     className="movie"
-                                    src={movie.image}
+                                    src={props.result.image}
                                     alt=""
-                                    onClick={() => openModal(result)}
+
                                 />
                                 <div className='streaming-container'>
                                     <div className='streaming-logo-price-container'>
@@ -78,12 +79,7 @@ const MovieCard = ({ movie }) => {
                                     </iframe>
                                 </div>
                             </div>
-
                         </div>
-
-
-
-
                         <div className="modal-footer">
                             {/* <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
                         </div>

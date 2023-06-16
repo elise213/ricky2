@@ -6,9 +6,9 @@ const Sticker = (props) => {
 
     console.log(props.sticker)
     let option = null;
-    let new1 = "/../public/img/New.png";
-    let new2 = "/../public/img/newrsticker.png";
-    let staff = "/../public/img/staff2.png";
+    let new1 = "/img/New.png";
+    let new2 = "/img/newrsticker.png";
+    let staff = "/img/staff2.png";
 
     if (props.sticker && props.sticker.category2) {
         if (props.sticker.category2 === "new") {

@@ -6,11 +6,7 @@ import styles from '../styles/front-page-card.css';
 import MovieCard from './MovieCard';
 
 const FrontPageCard = (props) => {
-    const [selectedMovie, setSelectedMovie] = useState(null);
 
-    const openModal = (movie) => {
-        setSelectedMovie(movie);
-    };
     return (
         <div>
             <Image
@@ -19,7 +15,6 @@ const FrontPageCard = (props) => {
                 className="movie"
                 src={props.result.image}
                 alt=""
-                onClick={() => openModal(props.result)}
             />
             <div className='hilights'>
                 <div className="sticker-and-review">
@@ -44,13 +39,13 @@ const FrontPageCard = (props) => {
                             className="btn learn-more"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
-                            onClick={() => openModal(props.result)}
+                        // onClick={() => openModal(props.result)}
                         >
                             More
                         </button>
                     </div>
                 </div>
-                {selectedMovie && <MovieCard movie={selectedMovie} />}
+                <MovieCard result={props.result} />
             </div>
         </div>)
 }

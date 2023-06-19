@@ -99,7 +99,7 @@ p {
 }
 
 .review-div {
-    padding: 0px 30px 15px 40px;
+    padding: 15px 30px 15px 40px;
 }
 
 .review {
@@ -117,8 +117,7 @@ p {
 }
 
 .modal-body {
-    object-fit: contain;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     background-color: whitesmoke;
     display: block;
     padding: 20px;
@@ -126,6 +125,7 @@ p {
 
 .modal-content {
     margin: 30px;
+
 }
 
 .modal-dialog {

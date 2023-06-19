@@ -1,9 +1,8 @@
 .streaming-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     width: 300px;
-    height: 100%;
-    padding-top: 50px;
+    height: 300px;
 }
 
 .streaming-logo-price-container {
@@ -19,7 +18,6 @@
 
 .streaming-logo {
     border-radius: 5%;
-    /* margin-right: 30px; */
 }
 
 p {
@@ -28,62 +26,102 @@ p {
 }
 
 .trailer-container {
-    object-fit: fill;
+    width: 100%;
+    /* height: 100% !important; */
     display: flex;
     justify-content: center;
+    object-fit: fill;
 }
-
-/* .ytp-cued-thumbnail-overlay-image {
-    height: null !important;
-} */
 
 .iframe {
     position: relative;
     bottom: 0;
-    width: 50%;
-    margin-right: 20px;
+    width: 100% !important;
+
 }
 
-.review-div {
+.poster-review-div {
+    width: 100%;
+    /* height: 100%; */
     display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    object-fit: fill;
-    width: 60%;
+    padding: 10px;
 }
 
-.poster-div {
-    /* width: 100%; */
-    height: 100%;
+.streaming-trailer-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.close-modal-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-title-div {
+    display: flex;
+    justify-content: center;
+}
+
+.movie {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-header {
     display: flex;
     justify-content: center;
-    border: solid 2px pink;
-    background-color: lightgray;
+    /* border: solid 5px green;
+    border-style: double; */
+    /* border-bottom: solid 2px green; */
+    /* background-color: lightgray; */
     color: black;
     font-size: x-large;
     align-items: center;
-    font-family: "Urbanist", sans-serif;
-
+    /* border: none; */
+    background-color: whitesmoke;
+    border: double 8px salmon;
+    background-color: rgb(245, 186, 77);
 }
 
+.modal-header .btn-close {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal-title {
+    font-family: "Urbanist", sans-serif;
+    font-size: xx-large;
+}
+
+.review-div {
+    padding: 0px 30px 15px 40px;
+}
 
 .review {
     font-size: large;
     font-family: "Urbanist", sans-serif;
-    padding-bottom: 20px;
+    line-height: 2;
 }
 
 .modal-content {
-    border: solid 2px pink;
     width: 90vw;
+    /* border: 6px solid lightgreen; */
+    border: 4px solid salmon;
+    /* border-style: double; */
+
 }
 
 .modal-body {
     object-fit: contain;
     overflow-x: scroll;
+    background-color: whitesmoke;
+    display: block;
+    padding: 20px;
 }
 
 .modal-content {
@@ -93,4 +131,11 @@ p {
 .modal-dialog {
     width: 100vw;
     max-width: none !important;
+    display: flex;
+    justify-content: center;
+}
+
+.ytp-title-link {
+    display: none !important;
+    font-family: 'MuseoModerno', cursive;
 }

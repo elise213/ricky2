@@ -21,12 +21,8 @@ const FrontPageCard = (props) => {
                     <Sticker className="sticker" sticker={props.result} />
                 </div>
                 <div className='center-column'>
-
                     <p className='hilight-title'>{props.result.title}</p>
-
-
                     <p className='hilight'>"bla bla bla bla bla bla bla bla bla"</p>
-
                     <p className='hilight'>First special thing</p>
                     <p className='hilight'>Second special thing</p>
                     <p className='hilight'>Third special thing</p>
@@ -38,14 +34,13 @@ const FrontPageCard = (props) => {
                             type="button"
                             className="btn learn-more"
                             data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                        // onClick={() => openModal(props.result)}
+                            data-bs-target={"#exampleModal" + props.id}
                         >
                             More
                         </button>
                     </div>
                 </div>
-                <MovieCard result={props.result} />
+                <MovieCard result={props.result} id={props.id} />
             </div>
         </div>)
 }

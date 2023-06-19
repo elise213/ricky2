@@ -5,6 +5,6 @@ module.exports = nextConfig
 
 module.exports = {
     images: {
-        domains: ['drive.google.com', 'static.metacritic.com'],
+        domains: ['drive.google.com', 'static.metacritic.com', "asset.cloudinary.com"],
     },
 };

@@ -16,14 +16,16 @@ const getState = ({ getStore, getActions, setStore }) => {
           year: "1979",
           image: "/img/apocalypse-now-1979.jpeg",
           category: "suspense",
-          category2: "new"
+          category2: "new",
+          trailer: "https://youtu.be/9l-ViOOFH-s"
         },
         {
           title: "The Evil Dead",
           year: "1981",
           image: "/img/the-evil-dead-1981.jpeg",
           category: "horror",
-          category2: "newtofree"
+          category2: "newtofree",
+          trailer: "https://www.youtube.com/watch?v=0cQmKgV0cug&ab_channel=ParkCircus"
         },
         {
           title: "Being There",

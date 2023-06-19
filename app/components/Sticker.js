@@ -4,7 +4,6 @@ import styles from '../styles/sticker.css';
 
 const Sticker = (props) => {
 
-    console.log(props.sticker)
     let option = null;
     let new1 = "/img/New.png";
     let new2 = "/img/newrsticker.png";
@@ -19,8 +18,6 @@ const Sticker = (props) => {
             option = new2;
         }
     }
-
-    console.log("STICKER", props.sticker);
 
     return (
         <div className='sticker-container'>

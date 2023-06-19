@@ -222,36 +222,7 @@
 }
 
 /* _____________________________________________________________-LOGIN/REGISTER */
-.logRegBtnModalCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.logRegBtnModalCont button {
-  width: 100%;
-}
-
-.logReggobackbtn:hover {
-  cursor: pointer;
-  color: lightgreen;
-}
-
-.avatarImages {
-  font-size: 4rem;
-  object-fit: cover;
-  transition: 0.5;
-}
-
-.avatarImages:hover {
-  font-size: 5rem;
-  cursor: pointer;
-}
-
-.avatarImageSelected {
-  font-size: 5rem;
-}
 
 /* _____________________________________________________________USER PROFILE PAGE */
 .profile-container {

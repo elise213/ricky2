@@ -22,7 +22,12 @@ const Home = () => {
             {store.movies.map((result, i) => (
               <li key={i}>
                 <div>
-                  <FrontPageCard result={result} />
+                  {/* <Image
+                    src="https://asset.cloudinary.com/dc9mjjs2a/6eccc473d5a6d346cfc7684e4d28cbaf"
+                    width={300}
+                    height={450}
+                    alt=""></Image> */}
+                  <FrontPageCard id={i} result={result} />
                 </div>
               </li>
             ))}
@@ -60,22 +65,7 @@ const Home = () => {
               ))}
           </ul>
         </div>
-        <div className='category'>
-          <span className='category-title'>COMEDY</span>
-        </div>
-        <div className="scroll-search-results">
-          <ul style={{ listStyleType: "none" }}>
-            {store.movies
-              .filter((movie) => movie.category === "comedy")
-              .map((result, i) => (
-                <li key={i}>
-                  <div>
-                    <FrontPageCard result={result} />
-                  </div>
-                </li>
-              ))}
-          </ul>
-        </div> */}
+        */}
       </div>
 
 

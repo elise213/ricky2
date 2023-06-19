@@ -1,5 +1,5 @@
 .video-cont {
-    height: 100dvh;
+    height: 100%;
     width: 100dvw;
 }
 
@@ -15,7 +15,5 @@
 
 .iframe-video {
     overflow: hidden;
-    width: 100%;
-    height: 98%;
     object-fit: cover;
 }

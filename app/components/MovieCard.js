@@ -1,76 +1,59 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/movie-card.css';
-import Link from 'next/link';
+import Sticker from './Sticker';
+
+import FrontPageCard from './FrontPageCard';
+import Streaming from './Streaming';
 
 const MovieCard = (props) => {
 
-    console.log("PROPS MODAl", props)
+    const defaultTrailer = "https://www.youtube.com/embed/ep518FVHKIU?&loop=1&mute=1&&playlist=ep518FVHKIU&showinfo=0&rel=0&enablejsapi=1";
+    const videoId = props.result.trailer && props.result.trailer !== "" ? props.result.trailer.split("https://youtu.be/")[1] : null;
+    const trailerUrl = videoId ? `https://www.youtube.com/embed/${videoId}?&loop=1&mute=1&&playlist=${videoId}&showinfo=0&rel=0&enablejsapi=1` : defaultTrailer;
+
+
     return (
         <div>
             {/* Modal */}
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={"exampleModal" + props.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-xxsl">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <span className="modal-title" id="exampleModalLabel">{props.result.title}</span>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div className="col-3" id="">{""}</div>
+                            <div className='col-6 modal-title-div'>
+                                <span className="modal-title" id="exampleModalLabel">{props.result.title}</span>
+                            </div>
+                            <div className='col-3 close-modal-div'>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
                         </div>
-                        <div className="modal-body d-flex">
+                        <div className="modal-body">
+                            <div className='poster-review-div'>
 
-                            <div className="poster-div">
-                                <Image
-                                    width={300}
-                                    height={450}
-                                    className="movie"
-                                    src={props.result.image}
-                                    alt=""
-
-                                />
-                                <div className='streaming-container'>
-                                    <div className='streaming-logo-price-container'>
-                                        <Link href="https://www.Netflix.com/">
-                                            <div className='streaming-logo-price-container'>
-                                                {/* <Image width={90} height={60} className="streaming-logo" src={"https://drive.google.com/file/d/1tTpAt1iF9Bb3W6Osn9evQfJxAXSCpJRO"} alt="" /> */}
-                                                <Image className="streaming-logo" src={"/streaming/netflix.jpg"} width="90" height="60"></Image>
-                                                <p>$8.99</p>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                    <div className='streaming-logo-price-container'>
-                                        <Link href="https://www.peacocktv.com/">
-                                            <div className='streaming-logo-price-container '>
-                                                <Image width={90} height={60} className="streaming-logo" src={"/streaming/apple.jpg"} alt="" />
-                                            </div>
-                                            <p>$8.99</p>
-                                        </Link>
-                                    </div>
-                                    <div className='streaming-logo-price-container'>
-                                        <Link href="https://www.hulu.com/">
-                                            <div className='streaming-logo-price-container '>
-                                                <Image width={90} height={60} className="streaming-logo" src={"/streaming/hulu.jpg"} alt="" />
-                                                <p>$8.99</p>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                    <div className='streaming-logo-price-container'>
-                                        <Link href="https://www.peacocktv.com/">
-                                            <div className='streaming-logo-price-container '>
-                                                <Image width={90} height={60} className="streaming-logo" src={"/streaming/peacock.jpg"} alt="" />
-                                                <p>$8.99</p>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                <div className="poster-div">
+                                    <Sticker sticker={props} />
+                                    <Image
+                                        width={300}
+                                        height={450}
+                                        className="movie"
+                                        src={props.result.image}
+                                        alt=""
+                                    />
+                                </div>
+                                <div className='review-div'>
+                                    <p className='review'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                    <p className='review'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                                 </div>
                             </div>
-                            <div className='review-div'>
-                                <span className='review'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-                                <span className='review'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+                            <div className="streaming-trailer-div">
+
+                                <Streaming />
                                 <div className="trailer-container">
                                     <iframe
-                                        style={{ height: 300, width: 500 }}
+                                        // style={{ height: 300, width: 500 }}
                                         className="iframe"
-                                        src="https://www.youtube.com/embed/ep518FVHKIU?&loop=1&mute=1&&playlist=ep518FVHKIU&showinfo=0&rel=0&enablejsapi=1"
+                                        src={trailerUrl}
                                         title="YouTube video player"
                                         frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
@@ -78,6 +61,7 @@ const MovieCard = (props) => {
                                     >
                                     </iframe>
                                 </div>
+                                {/* <FrontPageCard id="1" result={props} /> */}
                             </div>
                         </div>
                         <div className="modal-footer">

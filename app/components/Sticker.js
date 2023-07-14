@@ -22,7 +22,7 @@ const Sticker = (props) => {
     return (
         <div className='sticker-container'>
             {option && (
-                <Image className="sticker" src={option} height={80} width={80} />
+                <Image className="sticker" src={option} height={80} width={80} alt="" />
             )}
         </div>
     );

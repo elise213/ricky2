@@ -1,23 +1,29 @@
 .video-cont {
-    height: 100%;
-    width: 100vw;
     overflow: hidden;
     object-fit: cover;
+    width: 500px;
+    height: 530px;
 }
 
 .home-logo {
-    /* position: absolute; */
+    position: absolute;
     z-index: 2;
-    object-fit: contain;
-    /* width: 100dvw !important; */
-    width: 100% !important;
-    height: 100% !important;
-    margin: 50px;
-    padding: 10px;
+    object-fit: cover;
+    width: 130dvw;
+    margin: auto;
+    border: 5px solid white;
 }
 
 .iframe-video {
     overflow: hidden;
-    object-fit: cover;
-    width: 100%;
+    object-fit: contain;
+    width: 96vw;
+}
+
+.video-container {
+    height: 50dh;
+    width: 100dw;
+    display: flex;
+    justify-content: center;
+
 }

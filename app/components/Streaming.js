@@ -9,7 +9,7 @@ const Streaming = () => {
             <div className='streaming-logo-price-container'>
                 <Link href="https://www.Netflix.com/">
                     <div className='streaming-logo-price-container'>
-                        <Image className="streaming-logo" src={"/streaming/netflix.jpg"} width="90" height="60"></Image>
+                        <Image className="streaming-logo" src={"/streaming/netflix.jpg"} width="90" height="60" alt=""></Image>
                         <p>$8.99</p>
                     </div>
                 </Link>

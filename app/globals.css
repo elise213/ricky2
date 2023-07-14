@@ -1,115 +1,66 @@
+/* ___________________________________________________________________GLOBAL */
+body,
+label {
+  font-family: "Urbanist", sans-serif;
+  color: black !important;
+}
+
+.welcome,
+.resource-card,
+.profile-greeting,
+.resource-card-title,
+.tell-us,
+.question,
+.form-check-label,
+.maras-button {
+  font-family: "Urbanist", sans-serif;
+}
+
 .welcome {
   flex-direction: column;
   width: 100%;
   position: relative;
   display: flex;
-  font-family: "Urbanist", sans-serif;
   justify-content: center;
   align-items: center;
   object-fit: cover;
-
+  margin: auto;
+  padding-bottom: 104px;
 }
 
 .home-body {
-  margin: 0 0 50px 0;
-}
-
-
-.home-logo {
-  position: absolute;
-  z-index: 2;
-  object-fit: fill;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
   width: 100%;
-  /* top: 0 */
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
-.float {
-  float: right;
+.page-container,
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.form-check,
+.details {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-image,
 .welcome {
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  display: flex;
-  font-family: "Urbanist", sans-serif;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
-}
-
-.page-container {
-  margin: 0px 180px 30px 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100%;
-  padding-bottom: 30px;
-}
-
-/* _____________________________________________________________RESOURCE / OFFERING INFO */
-.resource-name-description {
-  display: flex;
-  justify-content: center;
-}
-
-.resource-title {
-  text-decoration: underline wavy lime;
-  font-family: "Urbanist", sans-serif;
-}
-
-.resource-name-description {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.carousel {
-  width: 400px;
-}
-
-.carousel-image {
   width: 35vw;
   object-fit: cover;
   height: 40vh;
-  border: 4px solid lightgreen;
 }
 
-.carousel-item {
-  margin-bottom: 10px;
-}
 
-.resource-card-text {
-  font-family: "Urbanist", sans-serif;
-  font-size: medium;
-  text-align: center;
-}
-
-.favorite-button-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* .description {
-  font-size: 15px;
-} */
-
-.resource-image {
-  border: 1px solid lime;
-  border-radius: 1%;
-  width: 400px;
-  margin: 00px 20px 20px 20px;
-}
-
-.rez-info {
-  margin: 0 60px 0 60px;
-  width: 100%;
-}
-
-.details-column {
+.details-column,
+.page-container,
+.profile-container,
+.details {
   width: 100%;
   padding: 10px;
   display: flex;
@@ -117,7 +68,10 @@
   justify-content: space-evenly;
 }
 
-/* _____________________________________________________________CARD */
+.card-title-div {
+  display: flex;
+  align-items: center;
+}
 
 .card-body {
   padding: 0px;
@@ -127,123 +81,14 @@
 }
 
 .card-img {
-  /* width: 90%;
-  height: 9vh !important; */
   object-fit: contain;
 }
 
-.resource-card {
-  align-items: center;
-  border: 1px solid black;
-  justify-content: center;
+.user-profile-container,
+.scroll-search-results ul,
+.selection {
   display: flex;
-  font-family: "Urbanist", sans-serif;
-  background-color: #eeeeee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 10px;
-  width: 95%;
-  height: 27vmin;
-  align-items: end;
-  padding: 4px;
-  max-width: 250px;
-}
-
-.card-header {
-  background-color: #eeeeee;
-  padding: 2px;
-  margin-bottom: 6%;
-  border: none;
-  min-height: 20%;
-  display: flex;
-  justify-content: between;
-  /* flex-direction: column; */
-}
-
-.card-title-div {
-  display: flex;
-  align-items: center;
-}
-
-.resource-card-title-name {
-  color: black;
-  font-size: medium;
-  font-weight: bold !important;
-}
-
-.resource-card-title {
-  font-family: "Urbanist", sans-serif;
-
-}
-
-.card-icon {
-  color: darkgreen;
-  font-size: large;
-  /* margin-right: 10px;
-  margin-bottom: 5px; */
-}
-
-/* _____________________________________________________________NAVBAR / FOOTER*/
-.navbar {
-  width: 100%;
-  top: 0;
-  padding: 10px;
-  font-family: "Urbanist", sans-serif;
-  background-color: white;
-  margin-top: 20px;
-}
-
-.nav-btn {
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  color: black !important;
-}
-
-.active {
-  text-decoration: underline wavy lime !important;
-}
-
-.nav-btn:hover {
-  color: lightgreen;
-  cursor: pointer;
-}
-
-.navbar-logo:hover {
-  cursor: pointer;
-}
-
-.navbar-logo {
-  width: 140px;
-}
-
-.nav-profile-icon {
-  font-size: xx-large;
-  margin-left: 5px;
-  color: black;
-}
-
-/* _____________________________________________________________-LOGIN/REGISTER */
-
-
-/* _____________________________________________________________USER PROFILE PAGE */
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  height: 100vh;
-}
-
-.profile-greeting {
-  font-size: 2.5rem;
-  font-family: "Urbanist", sans-serif;
-  margin-bottom: 40px;
-}
-
-.user-profile-container {
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .user-profile-pic {
@@ -253,113 +98,15 @@
   margin-right: 25px;
 }
 
-.favorites-container {
+.favorites-container,
+.page-container,
+.profile-container,
+.details {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.favorites-col {
-  font-family: "Urbanist", sans-serif;
-  height: 70vh;
-  width: 35vw;
-  overflow: scroll;
-  direction: rtl;
-}
-
-.favorite-a-tag:hover {
-  color: lightgreen;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* ---------------------------------------------------------------------SEARCH PAGE */
-
-.scroll-search-results {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  margin: 50px 30px 0px 30px;
-}
-
-.category-title {
-  font-size: 50px;
-  font-family: "Urbanist", sans-serif;
-  padding-left: 50px;
-}
-
-.category {
-  margin-top: 50px;
-}
-
-.scroll-search-results ul {
-  display: flex;
-  gap: 3rem;
-  margin: 20px;
-  padding: 0;
-  float: left;
-  margin: 0px 20px 0px 0px;
-}
-
-/* .search-results-full {
-  flex-direction: column;
-  margin: 0;
-  width: 96vw;
- display: flex;
-  width: 90%;
-  margin-top: 30px;
-  padding-bottom: 100px;
-  ;
-} */
-
-.scroll-search-results li {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.scroll-search-results::-webkit-scrollbar-track {
-  background-color: red;
-  margin: 30px;
-}
-
-.map-info {
-  flex-grow: 1;
-  width: 98%;
-  margin-bottom: 20px;
-}
-
-
-.grand-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 15px;
-}
-
-/* _____________________________________________________________DONATE */
-
-.donate-page {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.donate-text {
-  width: 70%;
-}
-
-.donate-text p {
-  font-family: "Space Mono", Sans-serif;
-  line-height: 2;
-}
-
-/* _____________________________________________________________Selection-*/
 .search-container {
   word-wrap: wrap;
   margin: 10px;
@@ -373,32 +120,21 @@
   flex-direction: column;
 }
 
-.selection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.tell-us {
-  font-family: "Urbanist", sans-serif;
-  font-size: 25px;
-}
-
 .dropdown-toggle {
   border: solid 1px lime !important;
-  font-family: "Urbanist", sans-serif !important;
   background-color: rgb(172, 172, 172) !important;
   color: black !important;
   box-shadow: none !important;
   border-radius: 0%;
 }
 
-.form-check {
-  display: flex;
-  margin: 10px;
+.input[type=checkbox]:checked {
+  background-color: lightgreen !important;
+  color: #ffffff !important;
+}
 
+.input[type='checkbox']:after {
+  box-shadow: none !important;
 }
 
 .form-check-input {
@@ -407,36 +143,8 @@
   width: 15px;
   height: 15px;
   margin-right: 5px;
-}
-
-.form-check-label {
-  font-family: "Urbanist", sans-serif;
-  font-size: 15px;
-}
-
-input[type=checkbox]:checked {
-  background-color: lightgreen !important;
-  color: #ffffff !important;
-}
-
-input[type='checkbox']:after {
-  box-shadow: none !important;
-}
-
-.form-check-input {
   cursor: pointer;
 }
-
-.question {
-  display: flex;
-  justify-content: center;
-  font-size: large;
-  font-weight: bold;
-  font-family: "Urbanist", sans-serif;
-}
-
-/* _____________________________________________________________CONTACT PAGE */
-
 
 .contact-page {
   margin: 80px;
@@ -450,312 +158,14 @@ input[type='checkbox']:after {
   width: 100%
 }
 
-/* _____________________________________________________________OFFERING*/
-
-.details {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-}
-
 .offering-details-page {
   display: flex;
   justify-content: center;
   padding: 0;
 }
 
-/* __________________________________________________SIZE < 1500px */
-@media screen and (max-width: 1500px) {
-  .resource-card-title-name {
-    font-size: medium;
-  }
-
-  .card-img {
-    height: 11vh !important;
-    width: 90%;
-  }
-}
-
-/* __________________________________________________SIZE < 990px */
-@media screen and (max-width: 990px) {
-
-  .deets {
-    flex-direction: column;
-  }
-
-  .scroll-search-results {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    display: flex;
-    height: 27vh;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .offerings-column {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    display: flex;
-    height: 27vh;
-    width: 100%;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-
-  .nav-btn {
-    font-size: 20px;
-  }
-
-  .my-navbar-items {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .resource-card {
-    width: 23vw;
-    height: 100%;
-  }
-
-  .card-img {
-    width: 75%;
-    object-fit: cover;
-  }
-
-  .card-icon {
-    font-size: medium;
-  }
-
-  .resource-card-title-name {
-    font-size: 12px;
-  }
-
-  .map-and-cities {
-    width: 100%;
-  }
-
-  .search-container {
-    width: 96vw;
-    margin-bottom: 20px;
-  }
-
-  .scroll-search-results ul {
-    display: flex;
-    gap: 3rem;
-    margin: 10px;
-  }
-
-  /* .search-results-full {
-    flex-direction: column;
-    margin: 0;
-    width: 96vw;
-  } */
-
-  .grand-container {
-    margin: 0;
-  }
-
-  .map-city-buttons {
-    display: flex;
-    overflow-y: auto;
-    overflow-x: scroll;
-    display: flex;
-    height: 8vh;
-    width: 95vw;
-    gap: .5rem;
-    margin-top: 10px;
-  }
-
-  .tell-us {
-    font-size: 20px;
-  }
-
-  .contact-page {
-    margin: 15px;
-    padding-top: 80px;
-  }
-
-  .offering-card {
-    align-items: center;
-    justify-content: center;
-    align-items: center !important;
-    width: 80%;
-    margin-bottom: 25px;
-  }
-
-  .offering-details-page {
-    margin: 0;
-  }
-
-  .fa-heart {
-    font-size: medium;
-  }
-}
-
-/* ------------------------------------------------------------SIZE < 600px */
-
-@media screen and (max-width: 600px) {
-  .tell-us {
-    font-size: 18px;
-  }
-
-  .favorites-col {
-    width: 40vw;
-  }
-
-  .details {
-    width: 100% !important;
-  }
-
-  .resource-card {
-    width: 29vw !important;
-
-  }
-
-  .resource-card-title-name {
-    font-size: 9px !important;
-  }
-
-  .card-icon {
-    font-size: small;
-    margin: 0;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 8vh !important;
-    object-fit: cover;
-  }
-
-  .scroll-search-results {
-    height: 47vmin;
-  }
-
-  .form-check-label {
-    font-size: 11px;
-  }
-
-  .fa-heart {
-    font-size: small;
-  }
-
-}
-
-/* ___________________________________________________________________GLOBAL */
-
-label {
-  font-family: "Urbanist", sans-serif;
-  color: black !important;
-}
-
-.maras-button {
-  border: 1px solid black;
-  background-color: white;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
-  padding: 3px;
-  font-size: small;
-}
-
-.maras-button:hover {
-  background-color: lightgreen;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
-}
-
-.submit {
-  border: 1px solid black;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: black;
-  background-color: lightgreen !important;
-  font-size: 20px;
+.scroll-search-results {
   width: 100%;
-  height: 30px;
-}
-
-/* change the name of this one  */
-.forgot-password {
-  padding-top: 15px;
-  text-decoration: none !important;
-  color: black;
-}
-
-.forgot-password:hover {
-  color: lightgreen;
-  cursor: pointer;
-}
-
-.radio {
-  border-radius: 3% !important;
-  border: solid 1px lightgray;
-}
-
-.radio-label {
-  color: gray
-}
-
-.back-to-results {
-  background-color: white;
-  font-family: "Urbanist", sans-serif;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 30vw;
-  height: 5vh;
-  font-size: 15px;
-  border: 2px solid lightgreen;
-  padding: 5px;
-}
-
-.fave-button {
-  border: none;
-  background-color: transparent;
-}
-
-.colored-heart {
-  color: red;
-}
-
-.fa-heart {
-  font-size: large;
-}
-
-.alert {
-  text-align: center;
-}
-
-.card {
-  border: none;
-  align-items: center;
-  width: 100%;
-}
-
-/* ________________________________________MAP */
-
-.marker {
-  position: relative;
-  display: inline-block;
-}
-
-.marker-icon i {
-  color: red;
-  font-size: 28px;
-}
-
-.marker-icon span {
-  position: absolute;
-  top: -26px;
-  left: -15px;
-  background-color: #fff;
-  padding: 4px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.favorite-button-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  overflow-x: scroll !important;
+  overflow-y: hidden;
 }

@@ -56,17 +56,19 @@ const Contact = () => {
                                     rows="3"
                                 ></textarea>
                             </div>
-                            <button type="submit" className="send-button">
-                                Send
-                            </button>
-
+                            <div className="col">
+                                <div>{""}</div>
+                                <button type="submit" className="send-button">
+                                    Send
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div className="sticker-holder">
-                <Image className="sticker" src="/../public/img/rewind.png" height={100} width={100} alt="" />
-            </div>
+            {/* <div className="sticker-holder"> */}
+            <Image className="sticker" src="/../public/img/rewind.png" height={100} width={100} alt="" />
+            {/* </div> */}
         </div >
     );
 };

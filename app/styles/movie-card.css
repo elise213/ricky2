@@ -28,6 +28,7 @@ p {
     display: flex;
     justify-content: center;
     object-fit: fill;
+    margin-top: 30px;
 }
 
 .iframe {
@@ -103,15 +104,6 @@ p {
     font-size: xx-large;
 }
 
-.review-div {
-    padding: 15px 30px 15px 40px;
-}
-
-.review {
-    font-size: large;
-    font-family: "Urbanist", sans-serif;
-    line-height: 2;
-}
 
 .modal-content {
     width: 90vw;
@@ -178,4 +170,18 @@ body.modal-open {
     /* Optional, depending on your use case */
     width: 100%;
     /* Optional, depending on your use case */
+}
+
+@media screen and (max-width: 950px) {
+    .review-div {
+        margin: 0 !important;
+        padding: 20px !important;
+        font-size: medium !important;
+    }
+}
+
+.review-div {
+    margin: 15px 80px 15px 80px;
+    line-height: 2;
+    font-size: x-large;
 }

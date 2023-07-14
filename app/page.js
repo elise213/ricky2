@@ -11,13 +11,12 @@ import Image from 'next/image';
 const Home = () => {
   const { store, actions } = useContext(Context);
 
-
   return (
     <main className={styles.main}>
       <div className="home-body">
-        <div className="welcome">
-          <Video />
-        </div>
+        {/* <div className="welcome"> */}
+        <Video />
+        {/* </div> */}
         <div className="scroll-search-results">
           <ul style={{ listStyleType: "none" }}>
             {store.movies.map((result, i) => (

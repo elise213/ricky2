@@ -39,7 +39,10 @@ p {
 .poster-review-div {
     width: 100%;
     display: flex;
-    padding: 10px;
+}
+
+.poster-div {
+    padding: 20px;
 }
 
 .streaming-trailer-div {
@@ -73,6 +76,8 @@ p {
 .movie {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 10px;
+    z-index: 4;
+    position: relative;
 }
 
 .modal-header {
@@ -118,9 +123,9 @@ p {
 .modal-body {
     background-color: whitesmoke;
     display: block;
-    padding: 20px;
+    /* padding: 20px; */
     border: 3px solid salmon;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .modal-dialog {
@@ -163,4 +168,14 @@ iframe.iframe .ytp-title-link {
     bottom: 0;
     width: 440px !important;
     height: 250px !important;
+}
+
+body.modal-open {
+    overflow: hidden;
+    height: 100%;
+    /* Optional, depending on your use case */
+    position: fixed;
+    /* Optional, depending on your use case */
+    width: 100%;
+    /* Optional, depending on your use case */
 }

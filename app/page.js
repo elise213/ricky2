@@ -6,14 +6,11 @@ import { Context } from './context/appContext';
 import MovieCard from './components/MovieCard';
 import FrontPageCard from './components/FrontPageCard';
 import Image from 'next/image';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 const Home = () => {
   const { store, actions } = useContext(Context);
-  // const DynamicBootstrapScript = dynamic(() => import('bootstrap/dist/js/bootstrap.bundle.min.js'), {
-  //   ssr: false, // Ensure it's not loaded on the server
-  // });
+
 
   return (
     <main className={styles.main}>

@@ -225,3 +225,7 @@
     transform: rotate(0deg);
   }
 }
+
+body.modal-open {
+  overflow: hidden;
+}

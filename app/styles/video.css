@@ -7,11 +7,9 @@
 
 .home-logo {
     position: absolute;
+    /* top: 0; */
     z-index: 2;
-    object-fit: cover;
-    width: 130dvw;
-    margin: auto;
-    border: 5px solid white;
+    width: 100dvw;
 }
 
 .iframe-video {

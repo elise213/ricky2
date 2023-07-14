@@ -18,8 +18,8 @@ const Streaming = () => {
                 <Link href="https://www.peacocktv.com/">
                     <div className='streaming-logo-price-container '>
                         <Image width={90} height={60} className="streaming-logo" src={"/streaming/apple.jpg"} alt="" />
+                        <p>$8.99</p>
                     </div>
-                    <p>$8.99</p>
                 </Link>
             </div>
             <div className='streaming-logo-price-container'>

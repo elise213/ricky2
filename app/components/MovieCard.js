@@ -64,7 +64,22 @@ const MovieCard = (props) => {
                                     />
                                 </div>
                                 <div className="review-div">
-                                    <p className="review"><Hilights result={props.result} /></p>
+                                    <p className="review">
+                                        Whether we write or speak or do but look
+                                        We are ever unapparent. What we are
+                                        Cannot be transfused into word or book.
+                                        Our soul from us is infinitely far.
+                                        However much we give our thoughts the will
+                                        To be our soul and gesture it abroad,
+                                        Our hearts are incommunicable still.
+                                        In what we show ourselves we are ignored.
+                                        The abyss from soul to soul cannot be bridged
+                                        By any skill of thought or trick of seeming.
+                                        Unto our very selves we are abridged
+                                        When we would utter to our thought our being.
+                                        We are our dreams of ourselves, souls by gleams,
+                                        And each to each other dreams of others' dreams.
+                                    </p>
                                 </div>
                             </div>
                             <div className="streaming-trailer-div">
@@ -75,7 +90,7 @@ const MovieCard = (props) => {
                                             className="iframe-2"
                                             src={trailerUrl}
                                             title="YouTube video player"
-                                            frameBorder="0"
+
                                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
                                             allowFullScreen
                                         ></iframe>

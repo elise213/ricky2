@@ -65,7 +65,6 @@ const Contact = () => {
                 </div>
             </div>
             <div className="sticker-holder">
-
                 <Image className="sticker" src="/../public/img/rewind.png" height={100} width={100} alt="" />
             </div>
         </div >

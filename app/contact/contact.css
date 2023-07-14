@@ -4,7 +4,7 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    margin: 60px 0px;
+    margin: 90px 0px;
 }
 
 .message-background {
@@ -42,7 +42,7 @@
 .form-control {
     border: 1px solid salmon;
     border-radius: 2px;
-    width: 200px;
+    width: 250px;
     min-height: 23px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -54,7 +54,7 @@
     font-family: "Urbanist", sans-serif;
     font-size: large;
     border-radius: 3px;
-    width: 213px;
+    width: 260px;
     float: right;
     margin-top: 20px;
 }
@@ -72,10 +72,10 @@
 }
 
 .sticker-holder {
-    width: 30%;
+    /* width: 30%; */
     display: flex;
     justify-content: flex-start;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .message {

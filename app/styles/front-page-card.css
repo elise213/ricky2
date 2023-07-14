@@ -34,6 +34,7 @@
     position: absolute;
     top: -60px;
     left: 9px;
+    z-index: 5;
 }
 
 .sticker-and-review {
@@ -69,4 +70,14 @@
 
 .modal-open {
     overflow: hidden;
+}
+
+body.modal-open {
+    overflow: hidden;
+    height: 100%;
+    /* Optional, depending on your use case */
+    position: fixed;
+    /* Optional, depending on your use case */
+    width: 100%;
+    /* Optional, depending on your use case */
 }

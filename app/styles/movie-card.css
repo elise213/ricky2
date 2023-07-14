@@ -27,8 +27,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
-    object-fit: fill;
-    margin-top: 30px;
+    object-fit: contain;
 }
 
 .iframe {
@@ -62,7 +61,6 @@ p {
 .close {
     padding: 0;
     margin: 0;
-    color: #f49287;
     font-size: xx-large;
     border: none;
     background-color: transparent;
@@ -87,9 +85,8 @@ p {
     color: black;
     font-size: x-large;
     align-items: center;
-    background-color: whitesmoke;
-    border: double 8px salmon;
-    border-radius: 3px;
+    border: double 8px rgb(250, 106, 103);
+    border-radius: 4px;
     background-color: rgb(245, 186, 77);
     padding: 10px;
     margin-top: 30px;
@@ -104,18 +101,20 @@ p {
     font-size: xx-large;
 }
 
-
 .modal-content {
     width: 90vw;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll !important;
+    border-radius: 3px;
 }
 
 .modal-body {
     background-color: whitesmoke;
     display: block;
-    border: 3px solid salmon;
+    border: 3px solid rgb(250, 106, 103);
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .modal-dialog {
@@ -158,6 +157,7 @@ iframe.iframe .ytp-title-link {
     bottom: 0;
     width: 440px !important;
     height: 250px !important;
+    margin-top: 10px;
 }
 
 body.modal-open {
@@ -170,7 +170,7 @@ body.modal-open {
     /* Optional, depending on your use case */
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
     .review-div {
         margin: 0 !important;
         padding: 20px !important;

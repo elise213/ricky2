@@ -88,6 +88,7 @@ label {
   display: flex;
   gap: 3rem;
   margin-bottom: 40px;
+  /* height: 400px; */
 }
 
 
@@ -168,6 +169,7 @@ label {
   width: 100%;
   overflow-x: scroll !important;
   overflow-y: hidden;
+
 }
 
 body.modal-open {

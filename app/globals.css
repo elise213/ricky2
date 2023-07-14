@@ -5,27 +5,21 @@ label {
   color: black !important;
 }
 
-.welcome,
-.resource-card,
-.profile-greeting,
-.resource-card-title,
-.tell-us,
-.question,
-.form-check-label,
-.maras-button {
+.form-check-label {
   font-family: "Urbanist", sans-serif;
 }
 
 .welcome {
   flex-direction: column;
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
-  margin: auto;
-  padding-bottom: 104px;
+  /* margin: auto; */
+  /* padding-bottom: 104px; */
+  object-fit: fill;
 }
 
 .home-body {
@@ -48,14 +42,6 @@ label {
   display: flex;
   justify-content: center;
 }
-
-.carousel-image,
-.welcome {
-  width: 35vw;
-  object-fit: cover;
-  height: 40vh;
-}
-
 
 .details-column,
 .page-container,
@@ -90,7 +76,6 @@ label {
   margin-bottom: 40px;
   /* height: 400px; */
 }
-
 
 .user-profile-pic {
   width: 120px;

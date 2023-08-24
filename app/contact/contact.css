@@ -1,87 +1,84 @@
 .contact-page {
-    top: 0;
-    position: absolute;
-    flex-direction: row;
     width: 100vw;
-    height: 100vh;
-    margin: 90px 0px;
-}
-
-.message-background {
+    height: auto;
     display: flex;
+    padding: 200px 0px 0px 0px !important;
     justify-content: center;
-    width: 60%;
-    border-radius: 1.1%;
-    padding: 30px;
-}
-
-.consultation {
-    color: white;
-}
-
-.consultation-link {
-    color: lightgreen;
-    text-decoration: none;
-}
-
-.contact-form-2 {
-    width: 90%;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 .label {
     font-family: "Urbanist", sans-serif;
-    color: white;
+    color: purple;
 }
 
-.looking-forward {
-    font-size: 20px;
-    color: white;
+.form-control,
+.send-button {
+    border: 1px solid salmon;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: "Urbanist", sans-serif;
 }
 
-.form-control {
-    border: 1px solid salmon;
-    border-radius: 2px;
-    width: 250px;
-    min-height: 23px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-col {
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0px 10px 0px 10px;
+}
+
+.form-col-full {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0px 10px 0px 10px;
 }
 
 .send-button {
     background-color: pink;
-    border: 2px solid salmon;
     color: salmon;
-    font-family: "Urbanist", sans-serif;
     font-size: large;
-    border-radius: 3px;
-    width: 260px;
-    float: right;
-    margin-top: 20px;
+    border: 1px solid salmon;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 15px 0px 0px 20px;
 }
 
 .send-button:hover {
     background-color: lightgreen;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (max-width: 800px) {
-    .message-background {
-        width: 90% !important;
-    }
-}
-
-.sticker-holder {
-    /* width: 30%; */
-    display: flex;
-    justify-content: flex-start;
-    object-fit: fill;
 }
 
 .message {
-    height: 60px;
+    height: 80px;
 }
 
-.col {
-    max-width: 450px;
+.contact-sticker {
+    position: absolute;
+    top: 230px;
+    right: 9px;
+    z-index: 5;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 20px 5px 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-sticker {
+        top: 180px !important;
+        right: 9px;
+    }
 }

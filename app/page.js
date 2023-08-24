@@ -14,13 +14,11 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className="home-body">
-        {/* <div className="welcome"> */}
         <Video />
-        {/* </div> */}
         <div className="scroll-search-results">
           <ul style={{ listStyleType: "none" }}>
             {store.movies.map((result, i) => (
-              <li key={i}>
+              <li key={i} style={i === store.movies.length - 1 ? { paddingRight: "35px" } : {}}>
                 <div>
                   <FrontPageCard id={i} result={result} />
                 </div>

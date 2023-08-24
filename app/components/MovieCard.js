@@ -34,8 +34,7 @@ const MovieCard = (props) => {
                 <div className="modal">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <div className="col-3" id=""></div>
-                            <div className="col-6 modal-title-div">
+                            <div className="cmodal-title-div">
                                 <span className="modal-title" id="exampleModalLabel">
                                     {props.result.title}
                                 </span>
@@ -54,7 +53,10 @@ const MovieCard = (props) => {
                         <div className="modal-body">
                             <div className="poster-review-div">
                                 <div className="poster-div">
-                                    <Sticker sticker={props} />
+                                    {console.log("STICKER PROPS", props)}
+                                    <div className='sticker-modal'>
+                                        <Sticker sticker={props.result} />
+                                    </div>
                                     <Image
                                         width={300}
                                         height={450}
@@ -85,16 +87,14 @@ const MovieCard = (props) => {
                             <div className="streaming-trailer-div">
                                 <Streaming />
                                 <div className="trailer-container">
-                                    <div className="iframe-container">
-                                        <iframe
-                                            className="iframe-2"
-                                            src={trailerUrl}
-                                            title="YouTube video player"
+                                    <iframe
+                                        className="iframe-2"
+                                        src={trailerUrl}
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                                        allowFullScreen
+                                    ></iframe>
 
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                                            allowFullScreen
-                                        ></iframe>
-                                    </div>
                                 </div>
                             </div>
                         </div>

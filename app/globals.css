@@ -5,8 +5,8 @@ label {
   color: black !important;
 }
 
-.body {
-  width: 100dvw !important;
+main {
+  width: 100vw !important;
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@ label {
   margin-bottom: 50px;
   overflow-x: hidden;
   overflow-y: scroll !important;
-  width: 100dw !important;
+  width: 100vw !important;
   height: 100%;
 }
 
@@ -134,18 +134,6 @@ label {
   cursor: pointer;
 }
 
-.contact-page {
-  margin: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-submit {
-  display: flex;
-  justify-content: center;
-  width: 100%
-}
-
 .offering-details-page {
   display: flex;
   justify-content: center;
@@ -162,9 +150,28 @@ label {
 body.modal-open {
   overflow: hidden;
   height: 100%;
-  /* Optional, depending on your use case */
   position: fixed;
-  /* Optional, depending on your use case */
   width: 100%;
-  /* Optional, depending on your use case */
 }
+
+.sticker-modal {
+  position: absolute;
+}
+
+.modal-body {
+  position: relative;
+  /* Add potential overflow properties if the content goes beyond the view */
+  overflow-y: auto;
+  /* max-height: calc(100vh - 100px); */
+  /* Adjust this value to your needs */
+}
+
+.sticker-modal {
+  position: absolute;
+  top: 90px;
+  /* Adjust as needed */
+  right: 230px;
+  /* Adjust as needed */
+}
+
+@media screen and (max-width: 800px) {}

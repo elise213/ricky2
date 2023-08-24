@@ -1,9 +1,8 @@
 .navbar {
     z-index: 3;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     top: 0;
-    padding: 0px 15px;
     font-family: "Urbanist", sans-serif;
     background-color: transparent;
     margin: 0px !important;
@@ -83,6 +82,5 @@
         align-items: flex-end !important;
         flex-direction: column;
         padding: 5px;
-        text-shadow: 2px 2px 8px black;
     }
 }

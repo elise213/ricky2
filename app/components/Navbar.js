@@ -24,9 +24,9 @@ const Navbar = () => {
                         {/* <Link href="/archive" passHref
                             className="nav-item nav-btn">ARCHIVE
                         </Link> */}
-                        <Link href="/services" passHref
+                        {/* <Link href="/services" passHref
                             className="nav-item nav-btn">RESEARCH
-                        </Link>
+                        </Link> */}
                         <Link href="/contact" passHref
                             className="nav-item nav-btn">CONTACT
                         </Link>

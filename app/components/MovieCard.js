@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../styles/movie-card.css';
 import Sticker from './Sticker';
-import FrontPageCard from './FrontPageCard';
+// import FrontPageCard from './FrontPageCard';
 import Streaming from './Streaming';
-import Hilights from './Hilights';
+// import Hilights from './Hilights';
 
 const MovieCard = (props) => {
     const defaultTrailer =

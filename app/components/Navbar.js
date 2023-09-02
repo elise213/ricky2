@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from '../styles/navbar.css';
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="navbar-collapse" id="navbarSupportedContent">
-                    <div className="nav-content ml-auto">
+                    <div className="nav-content ml-auto">f
                         <Link href="/" passHref
                             className="nav-item nav-btn">HOME
                         </Link>

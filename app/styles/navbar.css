@@ -1,50 +1,87 @@
 .navbar {
-    z-index: 3;
     width: 100vw;
-    height: 60px;
-    top: 0;
+    overflow-x: hidden;
+    min-height: 60px;
     font-family: "Urbanist", sans-serif;
-    background-color: transparent;
-    margin: 0px !important;
+    background-color: transparent !important;
+    margin: 0px 0px 40px 0px !important;
+    box-sizing: border-box;
     align-items: center;
-    display: flex;
-    justify-content: flex-end;
 }
 
-.navbar-toggler {
-    float: right;
+.fa-bars {
+    margin-top: 35px;
+}
+
+.navbar-toggler,
+.fa-bars {
     box-shadow: none !important;
     border: none !important;
+    color: var(--color1) !important;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .nav-content {
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Urbanist", sans-serif;
+    position: absolute;
+    top: 40px;
+}
+
+.new-navbar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.new-navbar.open {
+    left: 0;
+}
+
+.menu-icon {
+    position: fixed;
+    top: -25px;
+    left: 10px;
+    cursor: pointer;
+    color: var(--color1);
+    z-index: 1001;
 }
 
 .navbar-content {
     display: flex;
-    justify-content: space-evenly;
-}
-
-.nav-btn {
-    font-family: "Urbanist", sans-serif;
-    letter-spacing: 2px;
-    color: black;
-    text-decoration: none;
-    margin-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 20px 20px 20px;
 }
 
 .active {
     text-decoration: underline;
 }
 
-.nav-btn:hover {
-    cursor: pointer;
-    color: salmon;
+.nav-item {
+    font-family: "Urbanist", sans-serif;
+    letter-spacing: 2px;
+    color: var(--color1);
+    text-decoration: none;
+    /* margin: 20px; */
+    font-size: 16px;
+    justify-self: center;
+    z-index: 999;
+    margin-bottom: 20px;
 }
 
-.navbar-toggler-icon {
-    color: white
+.nav-item:hover {
+    cursor: pointer;
+    color: lightgreen !important;
 }
 
 .nav-btn:active {
@@ -57,24 +94,16 @@
     cursor: pointer;
 }
 
-.nav-item {
-    margin-bottom: 8px;
-}
-
 .navbar-logo {
     height: 100%;
     object-fit: cover;
 }
 
-.col {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-
+.icons {
+    color: white !important;
 }
 
-/* SMALL SCREENS */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
     .navbar-collapse {
         flex-basis: 100%;
         flex-grow: 1;
@@ -83,4 +112,14 @@
         flex-direction: column;
         padding: 5px;
     }
+
+    .nav-content {
+        flex-direction: column !important;
+    }
+
+    .navbar {
+        border: none !important;
+        margin: 0px !important;
+    }
+
 }

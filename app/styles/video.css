@@ -1,36 +1,24 @@
 .video-container {
     display: flex;
-    overflow: visible;
-    /* To ensure that the content doesn't get cut off */
-    width: 100%;
-    min-height: 200px;
-    /* Consider adjusting this if the content is taller */
-    height: auto;
-    /* Let it grow with content */
+    width: 100vw;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
+    box-sizing: border-box;
 
-    /* Your mask properties */
-    -webkit-mask-image: url('../../public/img/mask2.png');
-    mask-image: url('../../public/img/mask2.png');
+    /* Mask properties */
+    -webkit-mask-image: url('../../public/img/CCEA.png');
+    mask-image: url('../../public/img/CCEA.png');
     -webkit-mask-position: center center;
     mask-position: center center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    mask-size: cover;
+    /* -webkit-mask-size: cover; */
+    /* mask-size: cover; */
+    mask-size: contain;
 }
 
-
-.iframe-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
 
 .home-logo {
     position: absolute;
@@ -39,7 +27,6 @@
     width: 100%;
     height: 100%;
     z-index: 3;
-    /* Place logo above everything else */
 }
 
 @media screen and (max-width: 400px) {

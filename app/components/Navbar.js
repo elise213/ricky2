@@ -1,39 +1,68 @@
-import React from 'react';
+
+
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
 import styles from '../styles/navbar.css';
 
 const Navbar = () => {
+    const [isNavOpen, setIsNavOpen] = useState(true);
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+
+    const smoothScrollToContact = () => {
+        const contactSection = document.getElementById('contact-section');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 900) {
+                setIsNavOpen(false);
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
-        <nav className="navbar" id="navbar">
-            <div className="container-fluid">
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="navbar-collapse" id="navbarSupportedContent">
-                    <div className="nav-content ml-auto">f
-                        <Link href="/" passHref
-                            className="nav-item nav-btn">HOME
-                        </Link>
-                        {/* <Link href="/archive" passHref
-                            className="nav-item nav-btn">ARCHIVE
-                        </Link> */}
-                        {/* <Link href="/services" passHref
-                            className="nav-item nav-btn">RESEARCH
-                        </Link> */}
-                        <Link href="/contact" passHref
-                            className="nav-item nav-btn">CONTACT
-                        </Link>
+        <div>
+
+            <div className="menu-icon" onClick={toggleNav}>
+                {isNavOpen ? (
+                    <div onClick={() => setIsNavOpen(false)}>
+                        <p className="navbar-toggler">X</p>
                     </div>
-                </div>
+                ) : (
+                    <div onClick={() => setIsNavOpen(true)}>
+                        <i className="fas fa-bars"></i>
+                    </div>
+                )}
             </div>
-        </nav>
+            <nav className={`new-navbar ${isNavOpen ? 'open' : ''}`}>
+                <div className={`navbar-content ${isNavOpen ? 'open' : ''}`}>
+                    <span className="nav-item">
+                        {/* <Link href="/">HOME</Link> */}
+                        <Link href="/" passHref className="nav-item">HOME</Link>
+                    </span>
+                    <span className="nav-item">
+                        <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
+                    </span>
+                    <span className="nav-item">
+                        <Link href="/resources" passHref className="nav-item">RESOURCES</Link>
+                    </span>
+                    <span className="nav-item">
+                        <a onClick={smoothScrollToContact}> CONTACT
+                        </a>
+                    </span>
+                </div>
+            </nav>
+        </div>
     );
 };
 

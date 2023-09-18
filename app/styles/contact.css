@@ -2,10 +2,15 @@
     width: 100vw;
     height: auto;
     display: flex;
-    padding: 200px 0px 0px 0px !important;
+    flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    margin: 0;
+    align-items: center;
+}
+
+.contact-call {
+    display: flex;
+    justify-content: center;
 }
 
 .label {
@@ -15,7 +20,7 @@
 
 .form-control,
 .send-button {
-    border: 1px solid salmon;
+    border: 1px solid var(--color1);
     border-radius: 2px;
     width: 100%;
     padding: 10px;
@@ -34,6 +39,7 @@
     box-sizing: border-box;
     flex: 1;
     margin: 0px 10px 0px 10px;
+    width: 45%;
 }
 
 .form-col-full {
@@ -44,14 +50,32 @@
     margin: 0px 10px 0px 10px;
 }
 
+.contact-form-div {
+    display: flex;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 25px 20px 10px;
+    position: relative;
+}
+
 .send-button {
-    background-color: pink;
-    color: salmon;
+    position: absolute;
+    z-index: 999;
+    background-color: var(--color5);
+    color: rgb(252, 80, 60);
     font-size: large;
-    border: 1px solid salmon;
+    border: 1px solid var(--color1);
     cursor: pointer;
     transition: background-color 0.3s;
-    margin: 15px 0px 0px 20px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .send-button:hover {
@@ -69,16 +93,19 @@
     z-index: 5;
 }
 
-.contact-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 5px 20px 5px 5px;
-}
-
 @media screen and (max-width: 800px) {
     .contact-sticker {
         top: 180px !important;
         right: 9px;
     }
+}
+
+.circle-font {
+    font-size: 30px;
+    font-family: "Urbanist", sans-serif;
+    color: var(--color1);
+}
+
+input textarea {
+    font-size: large;
 }

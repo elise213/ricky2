@@ -1,23 +1,21 @@
-import React from "react";
+
+import React, { useRef, useEffect } from "react";
 import '../styles/video.css';
-import Image from 'next/image';
+
 
 const Video = () => {
+    const videoRef = useRef(null);
+    const containerRef = useRef(null);
+
     return (
         <div className="video-container" style={{
             minHeight: "450px"
         }}>
-            <div className="mask-reference"></div> {/* This is your reference div */}
-            <iframe
-                className="iframe-video"
-                width="500"
-                height="530"
-                src="https://www.youtube.com/embed/CTw1VFeYnHM?autoplay=1&loop=1&mute=1&controls=0&playlist=CTw1VFeYnHM&showinfo=0&rel=0&enablejsapi=1"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                allowFullScreen
-            ></iframe>
-            {/* Rest of your components */}
+            <div className="mask-reference"></div>
+            <video autoPlay loop muted playsInline className="video" ref={videoRef}>
+                <source src="./img/video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div >
     );
 };

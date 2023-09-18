@@ -9,16 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "build": "^0.1.4",
+    "circletype": "^2.3.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "font-awesome": "^4.7.0",
     "next": "^13.4.6",
     "node": "^20.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-youtube": "^10.1.0"
+    "react-icons": "^4.10.1",
+    "react-youtube": "^10.1.0",
+    "sweetalert2": "^11.7.27"
   }
 }

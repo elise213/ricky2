@@ -6,6 +6,12 @@ import '../styles/video.css';
 const Video = () => {
     const videoRef = useRef(null);
     const containerRef = useRef(null);
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play();
+        }
+    }, []);
+
 
     return (
         <div className="video-container" style={{

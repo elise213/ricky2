@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/navbar.css';
 
 const Navbar = () => {
-    const [isNavOpen, setIsNavOpen] = useState(true);
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);

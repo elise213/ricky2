@@ -6,10 +6,11 @@
     align-items: center;
     /* position: relative; */
     box-sizing: border-box;
+    margin-top: 80px;
 
     /* Mask properties */
-    -webkit-mask-image: url('../../public/img/CCEA.png');
-    mask-image: url('../../public/img/CCEA.png');
+    -webkit-mask-image: url('../../public/img/CCEA2.png');
+    mask-image: url('../../public/img/CCEA2.png');
     -webkit-mask-position: center center;
     mask-position: center center;
     -webkit-mask-repeat: no-repeat;

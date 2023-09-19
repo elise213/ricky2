@@ -5,7 +5,7 @@
   --color1: rgb(251, 120, 106);
   --color2: rgb(246, 179, 91);
   --color3: rgb(153, 161, 168);
-  --color4: rgb(162, 205, 225);
+  --color4: rgb(212, 180, 124);
   --color5: rgb(255, 170, 160);
 }
 
@@ -39,7 +39,7 @@ main {
 }
 
 .about {
-  margin: 80px 100px;
+  margin: 80px 200px;
   text-align: justify;
 }
 
@@ -177,12 +177,6 @@ body.modal-open {
   right: 230px;
 }
 
-.download-section {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (max-width: 1100px) {
   .about {
     margin: 50px 80px !important;
@@ -205,4 +199,8 @@ body.modal-open {
   .about span {
     font-size: medium;
   }
+}
+
+#contactTextArea {
+  min-height: 100px;
 }

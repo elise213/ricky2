@@ -32,33 +32,40 @@ const Navbar = () => {
 
     return (
         <div>
-
             <div className="menu-icon" onClick={toggleNav}>
+                <div className="open-icon" onClick={() => setIsNavOpen(true)}>
+                    <i className="fas fa-bars"></i>
+                </div>
                 {isNavOpen ? (
-                    <div onClick={() => setIsNavOpen(false)}>
-                        <p className="navbar-toggler">X</p>
+                    <div className="close-icon" onClick={() => setIsNavOpen(false)}>
+                        <span className="navbar-toggler">X</span>
                     </div>
-                ) : (
-                    <div onClick={() => setIsNavOpen(true)}>
-                        <i className="fas fa-bars"></i>
-                    </div>
+                ) : (""
                 )}
             </div>
+
             <nav className={`new-navbar ${isNavOpen ? 'open' : ''}`}>
+
                 <div className={`navbar-content ${isNavOpen ? 'open' : ''}`}>
                     <span className="nav-item">
-                        {/* <Link href="/">HOME</Link> */}
                         <Link href="/" passHref className="nav-item">HOME</Link>
                     </span>
                     <span className="nav-item">
-                        <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
+                        <Link href="/screenings" passHref className="nav-item">SCREENINGS</Link>
+                    </span>
+                    <span className="nav-item">
+                        <Link href="/workshops" passHref className="nav-item">WORKSHOPS & EVENTS</Link>
                     </span>
                     <span className="nav-item">
                         <Link href="/resources" passHref className="nav-item">RESOURCES</Link>
                     </span>
                     <span className="nav-item">
-                        <a onClick={smoothScrollToContact}> CONTACT
-                        </a>
+                        <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
+                    </span>
+                    <span className="nav-item">
+                        <Link href="/#contact-section" passHref className="nav-item">
+                            CONTACT
+                        </Link>
                     </span>
                 </div>
             </nav>

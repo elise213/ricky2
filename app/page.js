@@ -16,7 +16,9 @@ const Home = () => {
         <Video />
         <div className='about'>
           <span >
-            At the Center for Cinematic and Experimental Arts (CCEA), we host engaging hands-on workshops and screenings, reflecting the rich diversity of our community of artists, supporters, and educators. In addition to offering support for analog filmmaking, we provide fiscal sponsorship and legal consulting for documentary filmmakers. We prioritize authenticity over box office buzz, steadfastly championing creativity over commercialism. In doing so, we aim to facilitate unique cinematic experiences that enrich both our individual psyches and the wider community.
+            At The Center for Cinematic and Experimental Arts (CCEA), we host screenings and hands-on workshops, which reflect the rich diversity of our community of film enthusiasts.
+            We have a variety of ways to support filmmakers including fiscal sponsorship, in-house legal consulting, support for analog film workflows, and more.
+            We champion creativity over commercialism, and passion over hype. In doing so, we aim to facilitate unique cinematic experiences that enrich our psyches and communities.
           </span>
         </div>
         {/* <div className="scroll-search-results">

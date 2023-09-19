@@ -41,9 +41,7 @@ const Navbar = () => {
                 ) : (""
                 )}
             </div>
-
             <nav className={`new-navbar ${isNavOpen ? 'open' : ''}`}>
-
                 <div className={`navbar-content ${isNavOpen ? 'open' : ''}`}>
                     <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/" passHref className="nav-item">HOME</Link>

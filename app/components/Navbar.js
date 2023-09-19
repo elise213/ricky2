@@ -45,22 +45,22 @@ const Navbar = () => {
             <nav className={`new-navbar ${isNavOpen ? 'open' : ''}`}>
 
                 <div className={`navbar-content ${isNavOpen ? 'open' : ''}`}>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/" passHref className="nav-item">HOME</Link>
                     </span>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/screenings" passHref className="nav-item">SCREENINGS</Link>
                     </span>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/workshops" passHref className="nav-item">WORKSHOPS & EVENTS</Link>
                     </span>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/resources" passHref className="nav-item">RESOURCES</Link>
                     </span>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
                     </span>
-                    <span className="nav-item">
+                    <span className="nav-item" onClick={() => { setIsNavOpen(false); smoothScrollToContact(); }}>
                         <Link href="/#contact-section" passHref className="nav-item">
                             CONTACT
                         </Link>
@@ -69,6 +69,7 @@ const Navbar = () => {
             </nav>
         </div>
     );
+
 };
 
 export default Navbar;

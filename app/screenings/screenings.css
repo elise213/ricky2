@@ -1,0 +1,27 @@
+.screenings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 80px;
+}
+
+.screenings-image {
+    border-radius: 1%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .screenings-container {
+        margin: 40px !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        .screenings-container {
+            margin: 20px !important;
+        }
+    }
+}

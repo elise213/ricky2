@@ -104,29 +104,29 @@
 
 }
 
-
 .close-icon,
 .open-icon {
     position: absolute;
-    /* box-shadow: none !important;
-    border: none !important; */
     color: var(--color1) !important;
-
 }
 
 .close-icon {
     color: var(--color1);
-    font-size: 40px;
-    left: 210px;
+    font-size: 30px;
+    left: -40px;
     top: 5px;
     z-index: 10001;
+    transition: left .3s ease;
+}
 
+.close-icon.open {
+    left: 210px;
 }
 
 .open-icon {
     top: 5px;
     left: 15px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     z-index: 1009;
 }

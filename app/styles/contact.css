@@ -67,7 +67,7 @@
     z-index: 999;
     background-color: var(--color5);
     color: rgb(252, 80, 60);
-    font-size: large;
+    font-size: medium;
     border: 1px solid var(--color1);
     cursor: pointer;
     transition: background-color 0.3s;
@@ -79,7 +79,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Urbanist", sans-serif;
+    letter-spacing: 3;
+    /* font-family: "Urbanist", sans-serif; */
 }
 
 .send-button:hover {

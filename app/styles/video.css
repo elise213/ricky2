@@ -6,7 +6,7 @@
     align-items: center;
     /* position: relative; */
     box-sizing: border-box;
-    margin-top: 80px;
+    margin-top: 100px;
 
     /* Mask properties */
     -webkit-mask-image: url('../../public/img/CCEA2.png');
@@ -15,8 +15,6 @@
     mask-position: center center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    /* -webkit-mask-size: cover; */
-    /* mask-size: cover; */
     mask-size: contain;
 }
 
@@ -32,7 +30,7 @@
 
 @media screen and (max-width: 400px) {
     .video-container {
-        /* This ensures the mask always fills the container on smaller screens */
+
         min-height: 300px !important;
     }
 }

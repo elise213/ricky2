@@ -10,7 +10,7 @@ const Fiscal = () => {
             <Image height={600} width={600} className="screenings-image" src={"/img/sample3.png"} alt=""></Image>
             <div className='about'>
                 <span className=''>
-                    At The Center for Cinematic and Experimental Arts (CCEA), we are committed to alleviating the financial and logistical obstacles filmmakers face through a variety of services including our 501c3 fiscal sponsorship program.
+                    At The Center for Cinematic and Experimental Arts (CCEA), we are committed to lessening the financial and logistical obstacles filmmakers face through a variety of services including our 501c3 fiscal sponsorship program.
                     We facilitate tax-deductible donations and grants, ensuring you and your sponsors have the necessary resources and support to actualize your goals.
                 </span>
                 <p className="">
@@ -21,7 +21,6 @@ const Fiscal = () => {
                         Download the Application for Fiscal Sponsorship.
                     </a>
                 </div>
-
             </div>
         </div>
     )

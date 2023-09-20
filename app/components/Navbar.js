@@ -50,13 +50,10 @@ const Navbar = () => {
                         <Link href="/workshops" passHref className="nav-item">WORKSHOPS & CLASSES</Link>
                     </span>
                     <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-                        <Link href="/resources" passHref className="nav-item">RESOURCES</Link>
+                        <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
                     </span>
                     <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                         <Link href="/about" passHref className="nav-item">ABOUT</Link>
-                    </span>
-                    <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-                        <Link href="/fiscal" passHref className="nav-item">FISCAL SPONSORSHIP</Link>
                     </span>
                     <span className="nav-item" onClick={() => { setIsNavOpen(false); smoothScrollToContact(); }}>
                         <Link href="/#contact-section" passHref className="nav-item">

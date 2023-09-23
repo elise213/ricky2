@@ -19,7 +19,7 @@ const Video = () => {
         }}>
             <div className="mask-reference"></div>
             <video autoPlay loop muted playsInline className="video" ref={videoRef}>
-                <source src="/video1.mp4" type="video1/mp4" />
+                <source src="/img/video1.mp4" type="video/mp4" />
 
                 {/* <source src="https://www.youtube.com/watch?v=CTw1VFeYnHM" type="" /> */}
                 Your browser does not support the video tag.

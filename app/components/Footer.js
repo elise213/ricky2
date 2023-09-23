@@ -4,13 +4,15 @@ import styles from '../styles/footer.css';
 
 const Footer = () => (
     <footer className="footer">
-        <div className="foot-logo">
+        <div className="footer-centered larger-footer-div">
             <Image height={110} width={200} className="footer-logo" src="/img/CCEA2.png" alt="CCEA Logo" />
-        </div>
-        <div className="foot-details">
             <p className="foot">
-                © 2023 Center for Cinematic and Experimental Arts, Inc., All Rights Reserved
+                © 2023 CCEA, Inc., All Rights Reserved
             </p>
+        </div>
+        <div className='footer-centered'>
+            <Image height={65} width={150} className="lotus-img" src="/img/lotus3.png" alt="CCEA Logo" />
+
         </div>
     </footer>
 );

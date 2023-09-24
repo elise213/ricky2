@@ -12,7 +12,8 @@
 
 .larger-footer-div {
     width: 100%;
-    margin-left: 170px !important;
+    margin-left: 140px !important;
+    /* above is the width of the website credit img */
 }
 
 .footer-centered {

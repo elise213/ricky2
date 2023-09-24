@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    margin: 100px;
+    margin: 150px 200px 50px;
 
     -webkit-mask-image: url('../../public/img/CCEA2.png');
     mask-image: url('../../public/img/CCEA2.png');
@@ -13,6 +13,7 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     mask-size: contain;
+    min-height: 300px;
 }
 
 
@@ -25,9 +26,9 @@
     z-index: 3;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
     .video-container {
-
-        min-height: 300px !important;
+        margin: 80px 70px 40px 70px !important;
     }
+
 }

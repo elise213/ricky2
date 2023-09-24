@@ -11,7 +11,7 @@ const Footer = () => (
             </p>
         </div>
         <div className='footer-centered'>
-            <Image height={65} width={150} className="lotus-img" src="/img/lotus3.png" alt="CCEA Logo" />
+            <Image height={45} width={120} className="lotus-img" src="/img/lotus4.png" alt="CCEA Logo" />
 
         </div>
     </footer>

@@ -110,11 +110,11 @@
 .close-icon,
 .open-icon {
     position: absolute;
-    color: var(--color1) !important;
+    color: lightgreen;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .close-icon {
-    color: var(--color1);
     font-size: 30px;
     left: -40px;
     top: 5px;

@@ -82,6 +82,7 @@
 
 .send-button:hover {
     background-color: lightgreen;
+    border: 2px solid var(--color5);
 }
 
 .message {
@@ -105,6 +106,10 @@
 
     .contact-form {
         padding: 20px 45px 20px 30px !important;
+    }
+
+    .send-button {
+        font-size: small;
     }
 }
 

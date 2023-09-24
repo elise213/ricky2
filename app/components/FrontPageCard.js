@@ -9,7 +9,7 @@ const FrontPageCard = (props) => {
 
     return (
         <div>
-            <Image width={270} height={400} className="movie" src={props.result.image} alt="" />
+            <Image width={270} height={400} quality={70} className="movie" src={props.result.image} alt="" />
             <Hilights result={props.result} />
         </div>
     );

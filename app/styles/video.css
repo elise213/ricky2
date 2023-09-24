@@ -28,7 +28,12 @@
 
 @media screen and (max-width: 900px) {
     .video-container {
-        margin: 80px 70px 40px 70px !important;
+        margin: 80px 70px 40px 70px;
     }
+}
 
+@media screen and (max-width: 500px) {
+    .video-container {
+        margin: 40px !important;
+    }
 }

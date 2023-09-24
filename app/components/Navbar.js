@@ -10,10 +10,13 @@ const Navbar = () => {
     };
 
     const smoothScrollToContact = () => {
-        const contactSection = document.getElementById('contact-section');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        // Delay the scroll action to give the homepage time to load
+        setTimeout(() => {
+            const contactSection = document.getElementById('contact-section');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); // Adjust the delay as needed
     };
 
     useEffect(() => {

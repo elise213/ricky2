@@ -43,13 +43,17 @@
 }
 
 .learn-more {
-    background-color: pink;
-    border: 4px solid rgb(250, 106, 103);
-    color: rgb(250, 106, 103);
+    background-color: var(--color5);
+    color: rgb(252, 80, 60);
+    font-size: medium;
+    border: 1px solid lightgreen;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
     font-family: "Urbanist", sans-serif;
     font-size: large;
-    height: 80px;
-    width: 85px;
+    height: 75px;
+    width: 75px;
     border-radius: 50%;
     z-index: 4;
     position: absolute;
@@ -60,7 +64,7 @@
 
 .learn-more:hover {
     background-color: lightgreen;
-    border: solid 2px rgb(250, 106, 103);
+    border: 2px solid var(--color5);
 }
 
 .more-button {

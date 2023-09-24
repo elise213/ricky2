@@ -9,7 +9,7 @@ const Screenings = () => {
     const { store, actions } = useContext(Context);
     return (
         <div className='screenings-container'>
-            <Image height={600} width={600} className="screenings-image" src={"/img/sample5.png"} alt=""></Image>
+            <Image height={600} width={600} quality={100} className="screenings-image" src={"/img/sample5.png"} alt=""></Image>
             <div className='about'>
                 <span>
                     CCEA brings an array of rare experimental and 16mm films to the heart of Austin, Texas.

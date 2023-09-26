@@ -1,10 +1,11 @@
-'use client'
-import React, { useContext, useEffect, useState } from 'react';
+"use client";
+import React, { useContext, useEffect, useState } from "react";
 import Video from "../app/components/Video";
-import styles from './globals.css';
-import { Context } from './context/appContext';
-import FrontPageCard from './components/FrontPageCard';
-import Contact from './components/Contact';
+import styles from "./globals.css";
+import { Context } from "./context/appContext";
+import EmailList from "./components/EmailList";
+import FrontPageCard from "./components/FrontPageCard";
+import Contact from "./components/Contact";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -13,11 +14,12 @@ const Home = () => {
     <main className={styles.main}>
       <div className="home-body">
         <Video />
-        <div id="contact-section" >
+        <div id="contact-section">
           <Contact />
+          <EmailList />
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 export default Home;

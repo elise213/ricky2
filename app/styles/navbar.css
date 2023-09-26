@@ -1,135 +1,134 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
 :root {
-    --color1: #fff;
-    /* Define this variable with the color you want to use */
+  --color1: #fff;
+  /* Define this variable with the color you want to use */
 }
 
 .navbar {
-    min-height: 60px;
-    font-family: "Urbanist", sans-serif;
-    background-color: transparent;
-    margin: 0 0 40px 0;
-    box-sizing: border-box;
-    align-items: center;
+  min-height: 60px;
+  font-family: "Urbanist", sans-serif;
+  background-color: transparent;
+  margin: 0 0 40px 0;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .nav-content {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    font-family: "Urbanist", sans-serif;
-    position: absolute;
-    top: 40px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Urbanist", sans-serif;
+  position: absolute;
+  top: 40px;
 }
 
 .new-navbar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    background-color: #333;
-    transition: left 0.3s ease;
-    z-index: 10000;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 10000;
 }
 
 .new-navbar.open {
-    left: 0;
+  left: 0;
 }
 
 .navbar-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 60px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 20px 20px 20px;
 }
 
 .active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-item,
 .nav-item a {
-    font-family: "Urbanist", sans-serif;
-    letter-spacing: 1.5px;
-    color: var(--color1);
-    text-decoration: none;
-    font-size: 16px;
-    justify-self: center;
-    z-index: 999;
-    margin-bottom: 20px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--color1);
+  text-decoration: none;
+  font-size: 16px;
+  justify-self: center;
+  z-index: 999;
+  margin-bottom: 20px;
 }
 
 .nav-item:hover,
 .nav-item a:hover {
-    cursor: pointer;
-    color: lightgreen !important;
+  cursor: pointer;
+  color: lightgreen !important;
 }
 
 .nav-btn:active {
-    cursor: pointer;
-    text-decoration: underline;
-    color: #ffc400;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ffc400;
 }
 
 .navbar-logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar-logo {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 
 .icons {
-    color: white !important;
+  color: white !important;
 }
 
 @media screen and (max-width: 900px) {
-    .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 1;
-        display: flex;
-        align-items: flex-end !important;
-        flex-direction: column;
-        padding: 5px;
-    }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end !important;
+    flex-direction: column;
+    padding: 5px;
+  }
 
-    .nav-content {
-        flex-direction: column !important;
-    }
+  .nav-content {
+    flex-direction: column !important;
+  }
 
-    .navbar {
-        border: none !important;
-        margin: 0px !important;
-    }
-
+  .navbar {
+    border: none !important;
+    margin: 0px !important;
+  }
 }
 
 .close-icon,
 .open-icon {
-    position: absolute;
-    color: lightgreen;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  position: absolute;
+  color: rgb(238, 194, 144);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .close-icon {
-    font-size: 30px;
-    left: -40px;
-    top: 5px;
-    z-index: 10001;
-    transition: left .3s ease;
+  font-size: 30px;
+  left: -40px;
+  top: 5px;
+  z-index: 10001;
+  transition: left 0.3s ease;
 }
 
 .close-icon.open {
-    left: 210px;
+  left: 210px;
 }
 
 .open-icon {
-    top: 5px;
-    left: 15px;
-    font-size: 40px;
-    font-weight: bolder;
-    z-index: 1009;
+  top: 5px;
+  left: 15px;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 1009;
 }

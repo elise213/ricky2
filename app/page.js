@@ -16,7 +16,7 @@ const Home = () => {
         <Video />
         <div id="contact-section">
           <Contact />
-          <EmailList />
+          {/* <EmailList /> */}
         </div>
       </div>
     </main>

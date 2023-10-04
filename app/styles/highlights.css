@@ -1,0 +1,76 @@
+.highlights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: double 8px rgb(250, 106, 103);
+  background-color: rgb(245, 186, 77);
+  border-radius: 3%;
+  position: relative;
+  padding: 10px;
+}
+
+.highlight {
+  font-family: "Urbanist", sans-serif;
+  font-size: medium;
+  margin: 5px;
+}
+
+.highlight-title {
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sticker {
+  float: left;
+  position: absolute;
+  top: -60px;
+  left: 9px;
+  z-index: 5;
+}
+
+.sticker-and-review {
+  display: flex;
+  align-items: first baseline;
+}
+
+.learn-more-2 {
+  background-color: var(--color5);
+  background-color: black;
+  color: rgb(252, 80, 60);
+  font-size: medium;
+  border: 4px double lightgreen;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 50%;
+  font-family: "Urbanist", sans-serif;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  z-index: 4;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.learn-more-2:hover {
+  background-color: lightgreen;
+  border: 2px solid var(--color5);
+}
+
+@media screen and (max-width: 900px) {
+  .highlight-title {
+    font-size: large !important;
+  }
+  .highlight {
+    font-size: small !important;
+  }
+}

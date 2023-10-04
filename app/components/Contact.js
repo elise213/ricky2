@@ -90,7 +90,7 @@ const Contact = () => {
             ></textarea>
           </div>
         </div>
-        <div className="form-row">
+        <div className="form-col-full">
           <button className="send-button" type="submit">
             SEND
           </button>

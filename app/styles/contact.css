@@ -1,92 +1,90 @@
 .contact-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 .contact-call {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .label {
-    font-family: "Urbanist", sans-serif;
-    color: purple;
+  font-family: "Urbanist", sans-serif;
+  color: purple;
 }
 
 .form-control,
 .send-button {
-    border: 1px solid var(--color1);
-    border-radius: 2px;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: "Urbanist", sans-serif;
+  border: 1px solid var(--color1);
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Urbanist", sans-serif;
 }
 
 .form-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form-col {
-    padding: 10px;
-    box-sizing: border-box;
-    flex: 1;
-    margin: 0px 10px 0px 10px;
-    width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  margin: 0px 10px 0px 10px;
+  width: 45%;
 }
 
 .form-col-full {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    flex: 1;
-    margin: 0px 10px 0px 10px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  margin: 0px 10px 0px 10px;
 }
 
 .contact-form-div {
-    display: flex;
+  display: flex;
 }
 
 .contact-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 25px 20px 10px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 25px 20px 10px;
+  position: relative;
 }
 
 .send-button {
-    position: absolute;
-    z-index: 999;
-    background-color: var(--color5);
-    color: rgb(252, 80, 60);
-    font-size: medium;
-    border: 1px solid lightgreen;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 10px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1.5px;
+  z-index: 999;
+  background-color: var(--color5);
+  color: rgb(252, 80, 60);
+  font-size: medium;
+  /* border: 8px double darkgreen;
+  border: 2px solid var(--color5); */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 3px;
+  bottom: 20px;
+  right: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
 }
 
 .send-button:hover {
-    background-color: lightgreen;
-    border: 2px solid var(--color5);
+  background-color: lightgreen;
 }
 
 .message {
-    height: 80px;
+  height: 80px;
 }
 
 /* .contact-sticker {
@@ -96,29 +94,27 @@
     z-index: 5;
 } */
 
-
-
 @media screen and (max-width: 800px) {
-    .contact-sticker {
-        top: 180px !important;
-        right: 9px;
-    }
+  .contact-sticker {
+    top: 180px !important;
+    right: 9px;
+  }
 
-    .contact-form {
-        padding: 20px 45px 20px 30px !important;
-    }
+  .contact-form {
+    padding: 20px 45px 20px 30px !important;
+  }
 
-    .send-button {
-        font-size: small;
-    }
+  .send-button {
+    font-size: small;
+  }
 }
 
 .circle-font {
-    font-size: 30px;
-    font-family: "Urbanist", sans-serif;
-    color: var(--color4);
+  font-size: 30px;
+  font-family: "Urbanist", sans-serif;
+  color: var(--color4);
 }
 
 input textarea {
-    font-size: large;
+  font-size: large;
 }

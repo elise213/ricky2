@@ -34,8 +34,7 @@ const EmailList = () => {
 
   return (
     <div className="email-list-container">
-      <p>Sign Up For The CCEA Mailing List</p>
-
+      <p>Sign Up For Our Newsletter</p>
       <form
         ref={form}
         onSubmit={signUpForMailingList}
@@ -53,7 +52,7 @@ const EmailList = () => {
         </div>
         {/* <div className="email-list-button-div"> */}
         <button className="send-button send-2" type="submit">
-          Sign Up
+          Go
         </button>
         {/* </div> */}
       </form>

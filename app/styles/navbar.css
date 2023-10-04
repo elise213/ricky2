@@ -12,10 +12,10 @@
   margin: 0 0 40px 0;
   box-sizing: border-box;
   align-items: center;
+  width: 100vw;
 }
 
 .nav-content {
-  width: 100vw;
   display: flex;
   justify-content: space-around;
   font-family: "Urbanist", sans-serif;
@@ -109,7 +109,7 @@
 .close-icon,
 .open-icon {
   position: absolute;
-  color: rgb(238, 194, 144);
+  color: rgb(249, 226, 199);
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
@@ -131,4 +131,5 @@
   font-size: 40px;
   font-weight: bolder;
   z-index: 1009;
+  margin: 20px;
 }

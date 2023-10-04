@@ -1,87 +1,43 @@
-.hilights {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: double 8px rgb(250, 106, 103);
-    background-color: rgb(245, 186, 77);
-    width: 100%;
-    /* height: 33vh; */
-    border-radius: 3%;
-    margin: 0px 0p 50px 0px;
-    position: relative;
-}
-
-.center-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hilight {
-    font-family: "Urbanist", sans-serif;
-    font-size: medium;
-}
-
-.hilight-title {
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-}
-
-.sticker {
-    float: left;
-    position: absolute;
-    top: -60px;
-    left: 9px;
-    z-index: 5;
-}
-
-.sticker-and-review {
-    display: flex;
-    align-items: first baseline;
-}
-
 .learn-more {
-    background-color: var(--color5);
-    color: rgb(252, 80, 60);
-    font-size: medium;
-    border: 1px solid lightgreen;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 50%;
-    font-family: "Urbanist", sans-serif;
-    font-size: large;
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    z-index: 4;
-    position: absolute;
-    bottom: -40px;
-    right: 9px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--color5);
+  color: rgb(252, 80, 60);
+  font-size: medium;
+  border: 1px solid lightgreen;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  font-family: "Urbanist", sans-serif;
+  font-size: large;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  z-index: 4;
+  position: absolute;
+  bottom: -40px;
+  right: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .learn-more:hover {
-    background-color: lightgreen;
-    border: 2px solid var(--color5);
+  background-color: lightgreen;
+  border: 2px solid var(--color5);
 }
 
 .more-button {
-    width: 100%;
-    margin: 0px !important;
+  width: 100%;
+  margin: 0px !important;
 }
 
 .modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body.modal-open {
-    overflow: hidden;
-    height: 100%;
-    /* Optional, depending on your use case */
-    position: fixed;
-    /* Optional, depending on your use case */
-    width: 100%;
-    /* Optional, depending on your use case */
+  overflow: hidden;
+  height: 100%;
+  /* Optional, depending on your use case */
+  position: fixed;
+  /* Optional, depending on your use case */
+  width: 100%;
+  /* Optional, depending on your use case */
 }

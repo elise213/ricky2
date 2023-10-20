@@ -27,14 +27,6 @@ const Fiscal = () => {
         </span>
         <br />
         <br />
-        <p className=""></p>
-        <br />
-        {/* <div className="download-section nav-item">
-          <a href="/pdf/myfile.pdf" download>
-            Download the Application for Fiscal Sponsorship.
-          </a>
-        </div> */}
-        <br />
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfOSXl0DE6kTpCli5zwu4TeSDA0yIQfSzTEx4uyrZSbR-8Q6Q/viewform?embedded=true"
           width="640"

@@ -35,6 +35,6 @@
 @media screen and (max-width: 500px) {
   .video-container {
     margin: 100px 40px !important;
-    min-height: 200px !important;
+    min-height: 150px !important;
   }
 }

@@ -7,7 +7,7 @@ import Highlights from "./Highlights";
 
 const FrontPageCard = (props) => {
   return (
-    <div>
+    <div className="front-page-div">
       <Image
         width={220}
         height={320}

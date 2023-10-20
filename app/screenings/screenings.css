@@ -10,47 +10,8 @@
 
 .screenings-image {
   border-radius: 1%;
-  width: 100%;
   height: auto;
-}
-
-.movie-scroll-labels {
-  margin-top: 120px;
-}
-
-.movie-scroll-labels p {
-  width: 100%;
-  font-weight: 400;
-  font-size: 40px;
-  color: salmon;
-  letter-spacing: 1.2px;
-  margin: 20px;
-  font-family: "Urbanist", sans-serif;
-  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
-}
-
-.scroll-search-results {
-  width: 100%;
-  overflow-x: scroll !important;
-  overflow-y: hidden;
-}
-
-.scroll-search-results ul {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 40px;
-}
-
-.scroll-search-results::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-.scroll-search-results::-webkit-scrollbar-track {
-  background: transparent; /* Transparent background for the track */
-}
-
-.scroll-search-results::-webkit-scrollbar-thumb {
-  background: transparent; /* Transparent background for the thumb (the draggable part of the scrollbar) */
+  margin: 100px 0 50px 0;
 }
 
 @media screen and (max-width: 900px) {

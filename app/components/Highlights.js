@@ -29,11 +29,19 @@ const Highlights = (props) => {
         <div className="center-column">
           {!props.modalIsOpen && (
             <>
-              <p className="highlight-title">{props.result.title}</p>
-              <p className="highlight">"bla bla bla bla bla bla bla bla bla"</p>
-              <p className="highlight">First special thing</p>
-              <p className="highlight">Second special thing</p>
-              <p className="highlight">Third special thing</p>
+              {props.result.title && (
+                <p className="highlight-title">{props.result.title}</p>
+              )}
+              {props.result.bullet && (
+                <p className="highlight">{props.result.bullet}</p>
+              )}
+              {props.result.bullet2 && (
+                <p className="highlight">{props.result.bullet2}</p>
+              )}
+              {props.result.bullet3 && (
+                <p className="highlight">{props.result.bullet3}</p>
+              )}
+
               <div className="d-flex"></div>
 
               <div className="more-button">

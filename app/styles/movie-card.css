@@ -1,189 +1,185 @@
 p {
-    color: black;
-    text-decoration: none !important;
-    font-family: "Urbanist", sans-serif;
+  color: black;
+  text-decoration: none !important;
+  font-family: "Urbanist", sans-serif;
 }
 
 .trailer-container {
-    position: relative;
-    margin: 25px;
-    padding-top: 56.25%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  margin: 25px;
+  padding-top: 56.25%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .iframe-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
 }
 
-
 .poster-review-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .poster-div {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .sticker-modal {
-    position: absolute;
-    top: 90px;
-    right: 280px;
-    z-index: 5;
+  position: absolute;
+  top: 90px;
+  right: 130px;
+  z-index: 5;
 }
 
-
 .streaming-trailer-div {
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .close-div {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .close {
-    padding: 0;
-    margin: 0;
-    font-size: xx-large;
-    border: none;
-    background-color: transparent;
-    align-self: flex-end;
+  padding: 0;
+  margin: 0;
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+  align-self: flex-end;
+  color: salmon;
 }
 
 .modal-title-div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .movie {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 10px;
-    z-index: 4;
-    position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 10px;
+  z-index: 4;
+  position: relative;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-size: x-large;
-    align-items: center;
-    border: double 8px rgb(250, 106, 103);
-    border-radius: 4px;
-    background-color: rgb(245, 186, 77);
-    padding: 10px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: x-large;
+  align-items: center;
+  border: double 8px rgb(250, 106, 103);
+  border-radius: 4px;
+  background-color: rgb(245, 186, 77);
+  padding: 10px;
+  /* margin-top: 30px; */
 }
 
 .modal-footer {
-    border: none;
+  border: none;
 }
 
 .modal-title {
-    font-family: "Urbanist", sans-serif;
-    font-size: xx-large;
+  font-family: "Urbanist", sans-serif;
+  font-size: xx-large;
 }
 
 .modal-content {
-    width: 90vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll !important;
-    border-radius: 3px;
+  width: 90vw;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+  border-radius: 3px;
 }
 
 .modal-body {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid rgb(250, 106, 103);
-    margin-bottom: 30px;
-    border-radius: 4px;
-    overflow: hidden;
-    height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(250, 106, 103);
+  /* margin-bottom: 30px; */
+  border-radius: 4px;
+  overflow: hidden;
+  height: auto;
 }
 
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    border: none;
-    background-color: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border: none;
+  background-color: transparent;
 }
 
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
 }
 
 iframe.iframe .ytp-title-link {
-    display: none !important;
+  display: none !important;
 }
 
 .modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
-
 body.modal-open {
-    overflow: hidden;
-    height: 100%;
-    position: fixed;
-    width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 .review {
-    font-size: medium;
-    font-family: "Urbanist", sans-serif;
-
+  font-size: medium;
+  font-family: "Urbanist", sans-serif;
 }
 
 @media screen and (max-width: 900px) {
-    .review-div {
-        margin: 0 !important;
-        padding: 25px !important;
-        font-size: medium !important;
-    }
+  .review-div {
+    margin: 0 !important;
+    padding: 25px !important;
+    font-size: medium !important;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .poster-review-div {
-        flex-direction: column;
-    }
+  .poster-review-div {
+    flex-direction: column;
+  }
 }
 
 .review-div {
-    margin: 15px 80px 15px 80px;
-    line-height: 2;
-    font-size: x-large;
+  margin: 15px 80px 15px 80px;
+  line-height: 2;
+  font-size: x-large;
 }
 
 .review {
-    text-align: justify;
+  text-align: justify;
 }

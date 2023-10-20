@@ -1,25 +1,24 @@
 import React from "react";
 import Link from "next/link";
-// import styles from "../fiscal/fiscal.css"
-import stypes from "../screenings/screenings.css";
+import styles from "../styles/fiscal.css";
 import Image from "next/image";
 
 const Fiscal = () => {
   return (
-    <div className="screenings-container">
-      <Image
+    <div className="fiscal-container">
+      {/* <Image
         height={600}
         width={600}
         className="screenings-image"
         src={"/img/sample3.png"}
         alt=""
-      ></Image>
+      ></Image> */}
       <div className="about">
         <span className="">
           We are committed to lessening the financial and logistical obstacles
-          filmmakers face, through our fiscal sponsorship program. We facilitate
-          tax-deductible donations and grants, ensuring filmmakers and their
-          sponsors have the necessary resources and support.
+          filmmakers face, and part of that is our fiscal sponsorship program,
+          which allows tax-deductible donations and grants to be used for making
+          art.
         </span>
         <br />
         <br />
@@ -29,11 +28,22 @@ const Fiscal = () => {
           </Link>
         </p>
         <br />
-        <div className="download-section nav-item">
+        {/* <div className="download-section nav-item">
           <a href="/pdf/myfile.pdf" download>
             Download the Application for Fiscal Sponsorship.
           </a>
-        </div>
+        </div> */}
+        <br />
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfOSXl0DE6kTpCli5zwu4TeSDA0yIQfSzTEx4uyrZSbR-8Q6Q/viewform?embedded=true"
+          width="640"
+          height="4724"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </div>
     </div>
   );

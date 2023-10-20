@@ -56,37 +56,40 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="contact-form-div">
           <div className="form-col">
-            <label className="" htmlFor="nameInput">
+            {/* <label className="" htmlFor="nameInput">
               Name
-            </label>
+            </label> */}
             <input
               type="text"
               id="nameInput"
               name="name"
               className="form-control"
+              placeholder="Name"
             />
           </div>
           <div className="form-col">
-            <label className="" htmlFor="emailInput">
+            {/* <label className="" htmlFor="emailInput">
               Email
-            </label>
+            </label> */}
             <input
               type="text"
               id="emailInput"
               name="email"
               className="form-control"
+              placeholder="Email address"
             />
           </div>
         </div>
         <div className="contact-form-div">
           <div className="form-col-full">
-            <label className="" htmlFor="contactTextArea">
+            {/* <label className="" htmlFor="contactTextArea">
               Message
-            </label>
+            </label> */}
             <textarea
               id="contactTextArea"
               name="message"
               className="form-control"
+              placeholder="Messagge"
             ></textarea>
           </div>
         </div>

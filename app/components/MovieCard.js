@@ -15,10 +15,10 @@ const MovieCard = (props) => {
     ? `https://www.youtube.com/embed/${videoId}?&loop=1&mute=1&&playlist=${videoId}&showinfo=0&rel=0&enablejsapi=1`
     : defaultTrailer;
 
+  // Find and hide the YouTube title element
   useEffect(() => {
     const player = document.getElementById("movie_player");
     if (player) {
-      // Find and hide the YouTube title element
       const titleElement = player.querySelector(".ytp-title");
       if (titleElement) {
         titleElement.style.display = "none";
@@ -44,17 +44,17 @@ const MovieCard = (props) => {
                   onClick={props.toggleModal}
                   aria-label="Close"
                 >
-                  X
+                  <i className="fa-solid fa-xmark"></i>
                 </button>
               </div>
             </div>
             <div className="modal-body">
               <div className="poster-review-div">
                 <div className="poster-div">
-                  {console.log("STICKER PROPS", props)}
-                  <div className="sticker-modal">
+                  {/* {console.log("STICKER PROPS", props)} */}
+                  {/* <div className="sticker-modal">
                     <Sticker sticker={props.result} />
-                  </div>
+                  </div> */}
                   <Image
                     width={300}
                     height={450}
@@ -64,22 +64,13 @@ const MovieCard = (props) => {
                   />
                 </div>
                 <div className="review-div">
-                  <p className="review">
-                    Whether we write or speak or do but look We are ever
-                    unapparent. What we are Cannot be transfused into word or
-                    book. Our soul from us is infinitely far. However much we
-                    give our thoughts the will To be our soul and gesture it
-                    abroad, Our hearts are incommunicable still. In what we show
-                    ourselves we are ignored. The abyss from soul to soul cannot
-                    be bridged By any skill of thought or trick of seeming. Unto
-                    our very selves we are abridged When we would utter to our
-                    thought our being. We are our dreams of ourselves, souls by
-                    gleams, And each to each other dreams of others' dreams.
-                  </p>
+                  {props.result.description && (
+                    <p className="review">{props.result.description}</p>
+                  )}
                 </div>
               </div>
               <div className="streaming-trailer-div">
-                <Streaming />
+                {/* <Streaming /> */}
                 <div className="trailer-container">
                   <iframe
                     className="iframe-2"

@@ -17,10 +17,11 @@ const Home = () => {
         <Video />
         <div className="about">
           <span className="">
-            The Center for Cinematic and Experimental Arts (CCEA) is Texas-based
-            501(c)3 that exists to support and promote high quality, potent,
-            cinematic experiences throgh exhibition, workshops, and artist
-            support.
+            The Center for Cinematic and Experimental Arts (CCEA) is a
+            Texas-based 501(c)3 that promotes high-quality cinematic experiences
+            through exhibitions, workshops, and artist support. We aim to help
+            talented artists navigate the many obstacles inherent to independent
+            filmmaking.
           </span>
         </div>
         <div className="screenings-div">

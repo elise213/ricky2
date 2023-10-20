@@ -32,7 +32,9 @@ const MovieCard = (props) => {
             <div className="modal-header">
               <div className="cmodal-title-div">
                 <span className="modal-title" id="exampleModalLabel">
-                  {props.result.title}
+                  {props.result.subtitle
+                    ? props.result.subtitle
+                    : props.result.title}
                 </span>
               </div>
               <div className="close-div">
@@ -53,25 +55,26 @@ const MovieCard = (props) => {
                   {/* <div className="sticker-modal">
                     <Sticker sticker={props.result} />
                   </div> */}
-                  <Image
-                    width={300}
-                    height={450}
-                    className="movie"
-                    src={props.result.image}
-                    alt=""
-                  />
-                </div>
-                <div className="together">
-                  <div className="review-div">
-                    {props.result.description && (
-                      <p className="review">{props.result.description}</p>
-                    )}
-                  </div>
-                  <div className="review-div">
+                  <div className="together">
+                    <Image
+                      width={300}
+                      height={450}
+                      className="movie"
+                      src={props.result.image}
+                      alt=""
+                    />
                     {props.result.instruction && (
                       <p className="review">{props.result.instruction}</p>
                     )}
+                    {props.result.instruction2 && (
+                      <p className="review">{props.result.instruction2}</p>
+                    )}
                   </div>
+                </div>
+                <div className="review-div">
+                  {props.result.description && (
+                    <p className="review">{props.result.description}</p>
+                  )}
                 </div>
               </div>
               <div className="streaming-trailer-div">

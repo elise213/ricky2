@@ -40,6 +40,7 @@ const EmailList = () => {
         <i class="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
       </div>
+      <p>Sign Up For Our Newsletter</p>
       <form
         ref={form}
         onSubmit={signUpForMailingList}

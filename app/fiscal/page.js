@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../styles/fiscal.css";
+import styles from "./fiscal.css";
 import Image from "next/image";
 
 const Fiscal = () => {
@@ -13,19 +13,21 @@ const Fiscal = () => {
         src={"/img/sample3.png"}
         alt=""
       ></Image> */}
-      <div className="about">
+      <div className="fiscal-about">
         <span className="">
-          We are committed to mitigating the obstacles filmmakers face, and part
-          of that is throgh our fiscal sponsorship program, which allows
-          tax-deductible donations to be used for creating art.
+          CCEA is committed to helping independent projects get funded and
+          completed. Our fiscal sponsorship allows you to solicit and receive
+          tax deductible donations from individuals and gifts from foundations
+          in support of your projects. Please read
+          <Link href="/fiscalFAQ" passHref className="FAQ-link">
+            {" "}
+            this FAQ{" "}
+          </Link>
+          before you apply to the program.
         </span>
         <br />
         <br />
-        <p className="">
-          <Link href="/fiscalFAQ" passHref className="nav-item">
-            View the Fiscal Sponsorship FAQ
-          </Link>
-        </p>
+        <p className=""></p>
         <br />
         {/* <div className="download-section nav-item">
           <a href="/pdf/myfile.pdf" download>

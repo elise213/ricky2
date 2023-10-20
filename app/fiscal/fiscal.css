@@ -2,43 +2,68 @@
   margin: 120px 0px 0px 0px;
 }
 
-.Dq4amc {
-  display: none !important;
+.fiscal-container {
+  margin-top: 100px;
+  width: 100%;
 }
 
-.about {
-  margin: 80px 100px;
+.fiscal-about {
+  margin: 80px 0 0 0;
   text-align: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
-.about p {
+.fiscal-about span {
   font-family: "Urbanist", sans-serif;
   line-height: 2;
   font-size: x-large;
+  font-family: "Urbanist", sans-serif;
+  line-height: 2;
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  margin: 0 100px;
 }
 
 .download-section {
   display: flex;
 }
 
-@media screen and (max-width: 1100px) {
-  .about {
-    margin: 50px 80px !important;
-  }
+.FAQ-link {
+  text-decoration: none;
+  color: salmon !important;
+}
+
+.FAQ-link:hover {
+  color: lightgreen !important;
 }
 
 @media screen and (max-width: 900px) {
-  .about {
-    margin: 50px 40px 90px 40px !important;
+  iframe {
+    width: 500px !important;
   }
-
   .contact-div-footer {
     padding: 20px;
   }
-
-  .about p {
-    font-family: "Urbanist", sans-serif;
+  .fiscal-about span {
     line-height: 2;
-    font-size: large;
+    font-size: large !important;
+    /* margin: 0 25px; */
+  }
+  .fiscal-container {
+    margin-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fiscal-about span {
+    font-size: 20px !important;
+  }
+
+  iframe {
+    width: 450px !important;
   }
 }

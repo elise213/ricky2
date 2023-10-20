@@ -23,11 +23,6 @@
   border: 2px solid var(--color5);
 }
 
-.more-button {
-  width: 100%;
-  margin: 0px !important;
-}
-
 .modal-open {
   overflow: hidden;
 }

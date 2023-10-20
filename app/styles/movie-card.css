@@ -16,6 +16,7 @@ p {
 .together {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .iframe-2 {
@@ -68,7 +69,7 @@ p {
   border: none;
   background-color: transparent;
   align-self: flex-end;
-  color: salmon;
+  color: red;
 }
 
 .modal-title-div {
@@ -81,6 +82,7 @@ p {
   margin-left: 10px;
   z-index: 4;
   position: relative;
+  object-fit: cover;
 }
 
 .modal-header {
@@ -108,10 +110,10 @@ p {
 .modal-content {
   width: 90vw;
   max-width: 900px;
-  height: 80vh;
+  max-height: 85vh;
   overflow-x: hidden;
-  overflow-y: scroll !important;
-  border-radius: 3px;
+  overflow-y: auto;
+  border-radius: 12px;
 }
 
 .modal-body {
@@ -163,6 +165,7 @@ body.modal-open {
 .review {
   font-size: medium;
   font-family: "Urbanist", sans-serif;
+  letter-spacing: 1.4px;
 }
 
 @media screen and (max-width: 900px) {
@@ -170,6 +173,19 @@ body.modal-open {
     margin: 0 !important;
     padding: 25px !important;
     font-size: medium !important;
+  }
+
+  .movie {
+    width: 180px !important;
+    height: 260px !important;
+  }
+
+  .scroll-search-results ul {
+    gap: 2rem;
+  }
+
+  .review-div {
+    margin: 0 80px !important;
   }
 }
 
@@ -182,7 +198,14 @@ body.modal-open {
 .review-div {
   margin: 15px 80px 15px 80px;
   line-height: 2;
-  font-size: x-large;
+  /* font-size: x-large; */
+  display: flex;
+  align-items: center;
+}
+
+.review-div p {
+  font-size: large;
+  letter-spacing: 1.4px;
 }
 
 .review {

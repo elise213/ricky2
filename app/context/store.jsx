@@ -32,15 +32,44 @@ const getState = ({ getStore, getActions, setStore }) => {
         //   description: "this is the description",
         // },
         {
+          title: "Begotten",
+          year: "1989",
+          Runtime: "1h 18m",
+          Director: "E. Elias Merhige",
+          image: "/img/begotten.png",
+          category: "horror",
+          bullet: "October 30th in Austin TX",
+          description:
+            "Begotten (1989) is a disturbing vision of sacrifice, death, and rebirth that borders on the unwatchable. The story behind its creation — and its creator — is one that descends deep into the occult, alternate realities, and how art is a ritualized ceremony of catharsis... Begotten’s unflinching eye records death and rebirth in gut-wrenching clarity...It’s a spiritual purge of the toxins of human existence. Begotten has to be seen to be believed, although the stark, bleached-out white and inky black contrast at times makes it impossible to discern what’s haunting your screen. It’s like the art of Franz Kline and Francis Bacon brought into horrific, pulsating life. -- Marc Paterson, Certified Forgotten",
+          instruction:
+            "October 30 at 7:30pm; If you're squeamish you should avoid this like the plague; others may find it hard to shake off the artistry and originality of this visionary effort. And if you're looking to be freaked out you shouldn't pass it up. -- Jonathan Rosenbaum",
+        },
+        {
           title: "16mm DIY filmmaking",
           year: "2023",
           image: "/img/bolex2.jpg",
           category: "new",
           // category2: "newtofree",
+          bullet: "January 1st",
+          bullet2: "Austin, TX",
           description:
             "We are dedicated to nurturing a deeper appreciation for 8mm and 16mm filmmaking. Our workshops offer hands-on experience shooting and editing analog film using our Bolex Reflex cameras and analog editing equipment. Our development sessions introduce participants to natural processing methods using household items to develop film in a manner that's non-toxic, and inexpensive.",
           instruction:
-            "Our next cohort begins December 1st. Please email us at info@ccea.com for more information",
+            "Our next cohort begins January 1st. Please email us at info@ccea.com for more information",
+        },
+        {
+          title: "Workshop",
+          subtitle: "Legal challenges in documentary film",
+          year: "2023",
+          image: "/img/mwmc.png",
+          category: "staff",
+          bullet2: "February 1st",
+          // category2: "newtofree",
+          bullet: "Legal challenges in documentary film",
+          description:
+            "Documentary filmmaking can pose many legal challenges that are best to think about early in your project. This workshop will help you navigate some of the most common legal issues from fundraising through production and distribution of your film.  There will also be a Q&A at the end where you can come with your own questions..",
+          instruction: "The next workshop is January 15th.",
+          instruction2: "Please email us at info@ccea.com to be included.",
         },
         // {
         //   title: "The Texas Chain Saw Massacre",
@@ -50,18 +79,18 @@ const getState = ({ getStore, getActions, setStore }) => {
         //   category2: "staff",
         //   category2: "newtofree",
         // },
-        {
-          title: "The Elephant Man",
-          year: "1980",
-          image: "/img/the-elephant-man-1980.jpeg",
-          category: "staff",
-          category2: "newtofree",
-          bullet: "October 30th in Austin TX",
-          trailer: "https://youtu.be/kxb_1457gGs?si=-ylCQ4iHSAS8FP_g",
-          description:
-            "The film is different from the stage play of the same name, in which David Bowie played Merrick in 1980-81, as did Bradley Cooper in the recent London revival with a voice clearly inspired by Hurt. The play suggests a daring sexual tension in Kendal’s interest in Merrick, whereas the film imagines extended episodes in which a corrupt hospital porter (played by Michael Elphick) is being paid by pub drinkers to let them come and gawp at the terrified patient. At the time, I remember thinking that Treves’ rescuing of Merrick was like Nicholas Nickleby stepping in to prevent Smike being beaten in the legendary Royal Shakespeare Company stage adaptation in 1979. Lynch’s film was celebrated and spoofed in its time, not least in Richard Curtis’s comedy The Tall Guy, the plot of which featured a gobsmackingly tasteless musical version of The Elephant Man in which Jeff Goldblum took the lead. (Once you realise Lynch’s movie was produced by Mel Brooks, you can’t help thinking about his Young Frankenstein.) Nowadays, the context for its representation of disability has changed and the actor Adam Pearson, who has a similar condition to Merrick’s, has condemned the practice of “cripping up”. It has to be said that Lynch’s Elephant Man, while not exactly sentimental, takes a determinedly un-alienated attitude to Merrick’s image: rational, compassionate and very different from his approach to what might be called body-nonconformity in Eraserhead in which the keynote is clearly one of horror. There is far more empathy in The Elephant Man... (Peter Bradshaw)",
-          instruction: "October 30 at 7:30pm, email for details info@ccea.com",
-        },
+        // {
+        //   title: "The Elephant Man",
+        //   year: "1980",
+        //   image: "/img/the-elephant-man-1980.jpeg",
+        //   category: "staff",
+        //   category2: "newtofree",
+        //   bullet: "October 30th in Austin TX",
+        //   trailer: "https://youtu.be/kxb_1457gGs?si=-ylCQ4iHSAS8FP_g",
+        //   description:
+        //     "The film is different from the stage play of the same name, in which David Bowie played Merrick in 1980-81, as did Bradley Cooper in the recent London revival with a voice clearly inspired by Hurt. The play suggests a daring sexual tension in Kendal’s interest in Merrick, whereas the film imagines extended episodes in which a corrupt hospital porter (played by Michael Elphick) is being paid by pub drinkers to let them come and gawp at the terrified patient. At the time, I remember thinking that Treves’ rescuing of Merrick was like Nicholas Nickleby stepping in to prevent Smike being beaten in the legendary Royal Shakespeare Company stage adaptation in 1979. Lynch’s film was celebrated and spoofed in its time, not least in Richard Curtis’s comedy The Tall Guy, the plot of which featured a gobsmackingly tasteless musical version of The Elephant Man in which Jeff Goldblum took the lead. (Once you realise Lynch’s movie was produced by Mel Brooks, you can’t help thinking about his Young Frankenstein.) Nowadays, the context for its representation of disability has changed and the actor Adam Pearson, who has a similar condition to Merrick’s, has condemned the practice of “cripping up”. It has to be said that Lynch’s Elephant Man, while not exactly sentimental, takes a determinedly un-alienated attitude to Merrick’s image: rational, compassionate and very different from his approach to what might be called body-nonconformity in Eraserhead in which the keynote is clearly one of horror. There is far more empathy in The Elephant Man... (Peter Bradshaw)",
+        //   instruction: "October 30 at 7:30pm, email for details info@ccea.com",
+        // },
         // {
         //   title: "The Evil Dead",
         //   year: "1981",

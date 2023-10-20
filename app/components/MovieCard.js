@@ -5,15 +5,13 @@ import Sticker from "./Sticker";
 import Streaming from "./Streaming";
 
 const MovieCard = (props) => {
-  const defaultTrailer =
-    "https://www.youtube.com/embed/ep518FVHKIU?&loop=1&mute=1&&playlist=ep518FVHKIU&showinfo=0&rel=0&enablejsapi=1";
   const videoId =
     props.result.trailer && props.result.trailer !== ""
       ? props.result.trailer.split("https://youtu.be/")[1]
       : null;
   const trailerUrl = videoId
     ? `https://www.youtube.com/embed/${videoId}?&loop=1&mute=1&&playlist=${videoId}&showinfo=0&rel=0&enablejsapi=1`
-    : defaultTrailer;
+    : null;
 
   // Find and hide the YouTube title element
   useEffect(() => {
@@ -63,23 +61,32 @@ const MovieCard = (props) => {
                     alt=""
                   />
                 </div>
-                <div className="review-div">
-                  {props.result.description && (
-                    <p className="review">{props.result.description}</p>
-                  )}
+                <div className="together">
+                  <div className="review-div">
+                    {props.result.description && (
+                      <p className="review">{props.result.description}</p>
+                    )}
+                  </div>
+                  <div className="review-div">
+                    {props.result.instruction && (
+                      <p className="review">{props.result.instruction}</p>
+                    )}
+                  </div>
                 </div>
               </div>
               <div className="streaming-trailer-div">
                 {/* <Streaming /> */}
-                <div className="trailer-container">
-                  <iframe
-                    className="iframe-2"
-                    src={trailerUrl}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+                {trailerUrl && (
+                  <div className="trailer-container">
+                    <iframe
+                      className="iframe-2"
+                      src={trailerUrl}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                )}
               </div>
             </div>
             <div className="modal-footer"></div>

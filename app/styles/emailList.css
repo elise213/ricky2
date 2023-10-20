@@ -9,7 +9,7 @@
 
 .socials {
   display: flex;
-  font-size: x-large;
+  font-size: xx-large;
   color: salmon;
   width: 100%;
   justify-content: space-between;
@@ -46,7 +46,7 @@
 .email-list-input-div,
 .email-list-button-div {
   margin: 0;
-  font-size: small;
+  font-size: large;
   font-family: "Urbanist", sans-serif;
   letter-spacing: 1.2px;
 }
@@ -70,7 +70,7 @@
 }
 
 .email-logo {
-  width: 150px;
+  width: 200px;
   /* position: absolute; */
   /* z-index: 9999; */
   /* top: -78px; */

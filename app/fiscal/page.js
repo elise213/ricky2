@@ -15,10 +15,9 @@ const Fiscal = () => {
       ></Image> */}
       <div className="about">
         <span className="">
-          We are committed to lessening the financial and logistical obstacles
-          filmmakers face, and part of that is our fiscal sponsorship program,
-          which allows tax-deductible donations and grants to be used for making
-          art.
+          We are committed to mitigating the obstacles filmmakers face, and part
+          of that is throgh our fiscal sponsorship program, which allows
+          tax-deductible donations to be used for creating art.
         </span>
         <br />
         <br />

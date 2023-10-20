@@ -53,6 +53,12 @@ const Navbar = () => {
               WORKSHOPS & CLASSES
             </Link>
           </span> */}
+
+          <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            <Link href="/fiscal" passHref className="nav-item">
+              FISCAL SPONSORSHIP
+            </Link>
+          </span>
           <span
             className="nav-item"
             onClick={() => {
@@ -62,11 +68,7 @@ const Navbar = () => {
           >
             CONTACT
           </span>
-          <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-            <Link href="/fiscal" passHref className="nav-item">
-              SPONSORSHIP
-            </Link>
-          </span>
+
           {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
             <Link href="/about" passHref className="nav-item">
               ABOUT

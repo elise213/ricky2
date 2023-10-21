@@ -37,7 +37,7 @@ const EmailList = () => {
       <img className="email-logo" src="/img/LOGO2.png" />
       <div className="socials">
         <i className="fa-brands fa-instagram" />
-        <i class="fa-brands fa-twitter" />
+        <i className="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
       </div>
       <p>Sign Up For Our Newsletter</p>

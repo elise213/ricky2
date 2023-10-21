@@ -49,34 +49,34 @@ const MovieCard = (props) => {
               </div>
             </div>
             <div className="modal-body">
-              <div className="poster-review-div">
-                <div className="poster-div">
-                  {/* {console.log("STICKER PROPS", props)} */}
-                  {/* <div className="sticker-modal">
+              {/* <div className="poster-review-div"> */}
+              <div className="poster-div">
+                {/* {console.log("STICKER PROPS", props)} */}
+                {/* <div className="sticker-modal">
                     <Sticker sticker={props.result} />
                   </div> */}
-                  <div className="together">
-                    <Image
-                      width={300}
-                      height={450}
-                      className="movie"
-                      src={props.result.image}
-                      alt=""
-                    />
-                    {props.result.instruction && (
-                      <p className="review">{props.result.instruction}</p>
-                    )}
-                    {props.result.instruction2 && (
-                      <p className="review">{props.result.instruction2}</p>
-                    )}
-                  </div>
-                </div>
-                <div className="review-div">
-                  {props.result.description && (
-                    <p className="review">{props.result.description}</p>
+                <div className="together">
+                  <Image
+                    width={300}
+                    height={450}
+                    className="movie"
+                    src={props.result.image}
+                    alt=""
+                  />
+                  {props.result.instruction && (
+                    <p className="review">{props.result.instruction}</p>
+                  )}
+                  {props.result.instruction2 && (
+                    <p className="review">{props.result.instruction2}</p>
                   )}
                 </div>
               </div>
+              {/* <div className="review-div"> */}
+              {props.result.description && (
+                <p className="review">{props.result.description}</p>
+              )}
+              {/* </div> */}
+              {/* </div> */}
               <div className="streaming-trailer-div">
                 {/* <Streaming /> */}
                 {trailerUrl && (

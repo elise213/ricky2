@@ -101,18 +101,6 @@ const page = () => {
         Projects accepted into the program will be levied a 4% administrative
         fee on contributions directed towards projects.
       </p>
-
-      <p className="question">How does CCEA facilitate project donations?</p>
-      <p className="answer">
-        CCEA is equipped to facilitate donations for your project through
-        various means such as checks, wire transfers, or direct deposits. We
-        also accept contributions through a specially crafted online credit card
-        payment portal for your project. CCEA absorbs the transaction fees
-        linked with online payments, which typically range between 2.5% and
-        3.5%. Given this, we recommend capping online donations at $10,000,
-        encouraging larger contributions to utilize alternate payment modes.
-      </p>
-
       <p className="question">
         Could you explain the distinction between a donor and an investor?
       </p>
@@ -170,6 +158,13 @@ const page = () => {
         cost report delineating the allocation of funds disbursed to you
         throughout the last calendar year. If your project has wrapped up, the
         annual report needs to be complemented by a final cost report.
+      </p>
+      <p className="question">When can I apply, and when will I hear back?</p>
+      <p className="answer">
+        The CCEA accepts applications throughout the year. All applications will
+        be reviewed by the Fiscal Sponsorship Committee to determine if they fit
+        ur mission and standards. Applicants will be notified of the status of
+        their application via email within 2-3 weeks of receipt.
       </p>
     </div>
   );

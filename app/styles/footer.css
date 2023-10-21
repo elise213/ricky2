@@ -46,3 +46,9 @@
   letter-spacing: 1.2px;
   color: gray;
 }
+
+@media screen and (max-width: 600px) {
+  .larger-footer-div p {
+    font-size: x-small !important;
+  }
+}

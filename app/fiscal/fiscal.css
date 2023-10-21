@@ -41,6 +41,10 @@
   color: lightgreen !important;
 }
 
+iframe {
+  min-height: 200vh;
+}
+
 @media screen and (max-width: 900px) {
   iframe {
     width: 500px !important;
@@ -61,10 +65,10 @@
 @media screen and (max-width: 600px) {
   .fiscal-about span {
     font-size: medium !important;
-    margin: 0 25px !important;
+    margin: 0 40px !important;
   }
 
   iframe {
-    width: 450px !important;
+    width: 90vw !important;
   }
 }

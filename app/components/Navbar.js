@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
         <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
           <span className="navbar-toggler">
-            <i class="fa-solid fa-x"></i>
+            <i className="fa-solid fa-x"></i>
           </span>
         </div>
       </div>

@@ -176,20 +176,18 @@
 
 .modal-content-contact {
   max-width: 850px;
-  /* outline: 3px double rgb(66, 100, 30); */
-  outline-offset: 5px;
   border-radius: 3px;
   background-color: transparent;
-  /* height: auto !important; */
-  width: 70vw !important;
+  width: 70vw;
   z-index: 9999;
 }
 
 .close {
-  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: relative !important;
+  color: red;
 }
 
 .close:hover,
@@ -197,4 +195,15 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .modal-content-contact {
+    width: 100% !important;
+  }
+
+  .close {
+    position: absolute !important;
+    right: 10px;
+  }
 }

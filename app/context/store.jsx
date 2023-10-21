@@ -36,20 +36,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           year: "1989",
           Runtime: "1h 18m",
           Director: "E. Elias Merhige",
-          image: "/img/begotten.png",
+          image: "/img/begotten2.png",
           category: "horror",
           bullet: "October 30th in Austin TX",
           description:
             "Begotten (1989) is a disturbing vision of sacrifice, death, and rebirth that borders on the unwatchable. The story behind its creation — and its creator — is one that descends deep into the occult, alternate realities, and how art is a ritualized ceremony of catharsis... Begotten’s unflinching eye records death and rebirth in gut-wrenching clarity...It’s a spiritual purge of the toxins of human existence. Begotten has to be seen to be believed, although the stark, bleached-out white and inky black contrast at times makes it impossible to discern what’s haunting your screen. It’s like the art of Franz Kline and Francis Bacon brought into horrific, pulsating life. -- Marc Paterson, Certified Forgotten",
-          instruction:
-            "October 30 at 7:30pm; If you're squeamish you should avoid this like the plague; others may find it hard to shake off the artistry and originality of this visionary effort. And if you're looking to be freaked out you shouldn't pass it up. -- Jonathan Rosenbaum",
+          instruction: "October 30 at 7:30pm",
+          instruction2:
+            "If you're squeamish you should avoid this like the plague; others may find it hard to shake off the artistry and originality of this visionary effort. And if you're looking to be freaked out you shouldn't pass it up. -- Jonathan Rosenbaum",
         },
         {
           title: "16mm DIY filmmaking",
           year: "2023",
           image: "/img/bolex2.jpg",
           category: "new",
-          // category2: "newtofree",
           bullet: "January 1st",
           bullet2: "Austin, TX",
           description:

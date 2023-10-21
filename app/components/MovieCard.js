@@ -24,13 +24,27 @@ const MovieCard = (props) => {
     }
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const modal = document.querySelector(".modal");
+      if (modal && !modal.contains(event.target) && props.modalIsOpen) {
+        props.toggleModal();
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [props.modalIsOpen]);
+
   return (
     <div>
       {props.modalIsOpen && (
         <div className="modal">
           <div className="modal-content">
             <div className="modal-header">
-              <div className="cmodal-title-div">
+              <div className="modal-title-div">
                 <span className="modal-title" id="exampleModalLabel">
                   {props.result.subtitle
                     ? props.result.subtitle
@@ -77,9 +91,8 @@ const MovieCard = (props) => {
               )}
               {/* </div> */}
               {/* </div> */}
-              <div className="streaming-trailer-div">
-                {/* <Streaming /> */}
-                {trailerUrl && (
+              {trailerUrl ? (
+                <div className="streaming-trailer-div">
                   <div className="trailer-container">
                     <iframe
                       className="iframe-2"
@@ -89,8 +102,8 @@ const MovieCard = (props) => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                )}
-              </div>
+                </div>
+              ) : null}
             </div>
             <div className="modal-footer"></div>
           </div>

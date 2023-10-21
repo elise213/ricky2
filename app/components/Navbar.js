@@ -16,13 +16,27 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      const nav = document.querySelector(".new-navbar");
+      if (nav && !nav.contains(event.target) && isNavOpen) {
+        setIsNavOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isNavOpen]);
+
+  useEffect(() => {
     const body = document.body;
-    if (showContactModal) {
-      body.classList.add("modal-open");
+    if (isNavOpen || showContactModal) {
+      body.classList.add("no-scroll");
     } else {
-      body.classList.remove("modal-open");
+      body.classList.remove("no-scroll");
     }
-  }, [showContactModal]);
+  }, [isNavOpen, showContactModal]);
 
   return (
     <div>

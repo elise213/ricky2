@@ -19,6 +19,14 @@ body {
   background-color: rgb(228, 244, 222);
 }
 
+body.navbar-open {
+  overflow: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 .send-button {
   z-index: 999;
   background-color: white;

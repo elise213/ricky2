@@ -112,7 +112,7 @@
 .close-icon {
   font-size: 30px;
   left: -40px;
-  top: 25px;
+  top: 55px;
   z-index: 10001;
   transition: left 0.3s ease;
   /* margin-top: 35px; */
@@ -159,18 +159,25 @@
   z-index: 9999;
 }
 
+.close-div {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
 .close {
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  position: relative !important;
+  padding: 0;
+  margin: 0;
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+  align-self: flex-end;
   color: red;
 }
 
 .close:hover,
 .close:focus {
   color: black;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -187,6 +194,7 @@
 
   .close {
     position: absolute !important;
-    right: 10px;
+    right: 20px;
+    top: 20px;
   }
 }

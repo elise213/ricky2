@@ -11,38 +11,39 @@ import Footer from "./components/Footer";
 const Home = () => {
   const { store, actions } = useContext(Context);
   const scrollRef = useRef();
+
+  const [isClient, setIsClient] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setIsClient(true);
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   const checkOverflow = () => {
     if (!scrollRef.current) return;
 
     const container = scrollRef.current;
-
-    console.log("scrollWidth:", container.scrollWidth);
-    console.log("offsetWidth:", container.offsetWidth);
-
     const isOver = container.scrollWidth > container.offsetWidth;
-    console.log("Is Overflowing:", isOver);
-
     setIsOverflowing(isOver);
   };
 
   useEffect(() => {
+    if (!isClient) return; // Skip if component is not mounted yet
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       checkOverflow();
     };
 
     window.addEventListener("resize", handleResize);
-
     checkOverflow();
-    console.log("ISOVER", isOverflowing);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [store.movies, windowWidth]);
+  }, [isClient, store.movies, windowWidth]); // Added isClient dependency
 
   return (
     <main className={styles.main}>
@@ -61,29 +62,6 @@ const Home = () => {
           <div className="movie-scroll-labels">
             <p>Upcoming Workshops and Events</p>
           </div>
-          {/* <div
-            className="scroll-search-results"
-            style={{
-              justifyContent: isOverflowing ? "space-around" : "center",
-            }}
-          >
-            <ul ref={ulRef}>
-              {store.movies.map((result, i) => (
-                <li
-                  key={i}
-                  style={
-                    i === store.movies.length - 1
-                      ? { paddingRight: "35px" }
-                      : {}
-                  }
-                >
-                  <div>
-                    <FrontPageCard id={i} result={result} />
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div> */}
           <div
             ref={scrollRef}
             className="scroll-search-results"

@@ -163,8 +163,8 @@ const page = () => {
       <p className="answer">
         The CCEA accepts applications throughout the year. All applications will
         be reviewed by the Fiscal Sponsorship Committee to determine if they fit
-        ur mission and standards. Applicants will be notified of the status of
-        their application via email within 2-3 weeks of receipt.
+        CCEA's requirements. Applicants will be notified of the status of their
+        application via email within 2-3 weeks of receipt.
       </p>
     </div>
   );

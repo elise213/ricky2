@@ -33,10 +33,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  iframe {
-    /* width: 500px !important; */
-    height: auto !important;
-  }
   .contact-div-footer {
     padding: 20px;
   }
@@ -50,12 +46,24 @@
   }
 }
 
+iframe {
+  min-height: 500vh;
+}
+
 @media screen and (max-width: 600px) {
   .fiscal-about span {
     font-size: medium !important;
     margin: 0 40px !important;
   }
-  /* iframe {
+
+  iframe {
+    /* min-height:  */
     width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* iframe {
+    min-height: 500vh !important;
   } */
 }

@@ -57,8 +57,8 @@ const Home = () => {
               {" "}
               artist support.{" "}
             </Link>
-            We aim to help talented artists navigate the many obstacles inherent
-            to independent filmmaking.
+            CCEA is dedicated to helping talented artists overcome the unique
+            challenges of independent filmmaking.
           </span>
         </div>
         <div className="screenings-div">

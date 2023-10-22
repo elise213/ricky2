@@ -1,11 +1,10 @@
 "use client";
 import React, { useContext, useEffect, useState, useRef } from "react";
+import Link from "next/link";
 import Video from "../app/components/Video";
 import styles from "./globals.css";
 import { Context } from "./context/appContext";
-import EmailList from "./components/EmailList";
 import FrontPageCard from "./components/FrontPageCard";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const Home = () => {
@@ -43,7 +42,7 @@ const Home = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isClient, store.movies, windowWidth]); // Added isClient dependency
+  }, [isClient, store.movies, windowWidth]);
 
   return (
     <main className={styles.main}>
@@ -53,9 +52,13 @@ const Home = () => {
           <span className="">
             The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
             nonprofit that promotes high-quality cinematic experiences through
-            exhibitions, workshops, and artist support. We aim to help talented
-            artists navigate the many obstacles inherent to independent
-            filmmaking.
+            exhibitions, workshops, and
+            <Link href="/fiscal" passHref className="FAQ-link">
+              {" "}
+              artist support.{" "}
+            </Link>
+            We aim to help talented artists navigate the many obstacles inherent
+            to independent filmmaking.
           </span>
         </div>
         <div className="screenings-div">

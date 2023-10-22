@@ -7,6 +7,15 @@
   --color5: rgb(183, 227, 168);
 }
 
+.FAQ-link {
+  text-decoration: none;
+  color: salmon !important;
+}
+
+.FAQ-link:hover {
+  color: lightgreen !important;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -260,15 +269,21 @@ textarea {
 @media screen and (max-width: 600px) {
   .about span {
     font-size: medium;
+    line-height: 1.6;
   }
   .movie-scroll-labels p {
     font-size: 25px !important;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .about {
-    margin: 20px !important;
+    margin: 20px 30px !important;
+  }
+
+  .about span {
+    font-size: 14px;
+    font-weight: 200;
   }
 
   .movie-scroll-labels p {

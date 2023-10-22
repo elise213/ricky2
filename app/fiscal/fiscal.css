@@ -32,15 +32,6 @@
   display: flex;
 }
 
-.FAQ-link {
-  text-decoration: none;
-  color: salmon !important;
-}
-
-.FAQ-link:hover {
-  color: lightgreen !important;
-}
-
 iframe {
   min-height: 200vh;
 }

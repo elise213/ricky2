@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./fiscal.css";
 import Image from "next/image";
 
 const Fiscal = () => {
   return (
-    <div className="fiscal-container">
+    <div className={`fiscal-container`}>
       {/* <Image
         height={600}
         width={600}
@@ -30,7 +30,8 @@ const Fiscal = () => {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfOSXl0DE6kTpCli5zwu4TeSDA0yIQfSzTEx4uyrZSbR-8Q6Q/viewform?embedded=true"
           width="640"
-          height="4724"
+          // height="4724"
+          height="100%"
           frameborder="0"
           marginheight="0"
           marginwidth="0"

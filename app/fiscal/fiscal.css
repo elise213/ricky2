@@ -32,13 +32,10 @@
   display: flex;
 }
 
-iframe {
-  min-height: 200vh;
-}
-
 @media screen and (max-width: 900px) {
   iframe {
-    width: 500px !important;
+    /* width: 500px !important; */
+    height: auto !important;
   }
   .contact-div-footer {
     padding: 20px;
@@ -58,8 +55,7 @@ iframe {
     font-size: medium !important;
     margin: 0 40px !important;
   }
-
-  iframe {
+  /* iframe {
     width: 90vw !important;
-  }
+  } */
 }

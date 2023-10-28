@@ -35,11 +35,11 @@ const EmailList = () => {
   return (
     <div className="email-list-container">
       <img className="email-logo" src="/img/LOGO2.png" />
-      <div className="socials">
+      {/* <div className="socials">
         <i className="fa-brands fa-instagram" />
         <i className="fa-brands fa-twitter" />
         <i className="fa-brands fa-facebook-f" />
-      </div>
+      </div> */}
       <p>Sign Up For Our Newsletter</p>
       <form
         ref={form}

@@ -60,78 +60,80 @@ const Navbar = () => {
   }, [isNavOpen, showContactModal, isLargeScreen]);
 
   return (
-    <div className="nav-container">
-      <nav className={`new-navbar ${isNavOpen ? "open" : ""}`}>
-        {!isLargeScreen && (
-          <div className="menu-icon" onClick={toggleNav}>
-            <div
-              className={`open-icon ${!isNavOpen ? "closed" : ""}`}
-              onClick={() => setIsNavOpen(true)}
+    <>
+      <div className="nav-container">
+        <nav className={`new-navbar ${isNavOpen ? "open" : ""}`}>
+          {!isLargeScreen && (
+            <div className="menu-icon" onClick={toggleNav}>
+              <div
+                className={`open-icon ${!isNavOpen ? "closed" : ""}`}
+                onClick={() => setIsNavOpen(true)}
+              >
+                <i className="fas fa-bars"></i>
+              </div>
+              <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
+                <span className="navbar-toggler">
+                  <i className="fa-solid fa-x"></i>
+                </span>
+              </div>
+            </div>
+          )}
+
+          <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
+            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+              <Link href="/" passHref className="nav-item">
+                HOME
+              </Link>
+            </span>
+
+            <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+              <Link href="/fiscal" passHref className="nav-item">
+                FISCAL SPONSORSHIP
+              </Link>
+            </span>
+            <span
+              className="nav-item"
+              onClick={() => {
+                setIsNavOpen(false);
+                toggleContactModal();
+              }}
             >
-              <i className="fas fa-bars"></i>
-            </div>
-            <div className={`close-icon ${isNavOpen ? "open" : ""}`}>
-              <span className="navbar-toggler">
-                <i className="fa-solid fa-x"></i>
-              </span>
-            </div>
-          </div>
-        )}
+              CONTACT
+            </span>
 
-        <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-          <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-            <Link href="/" passHref className="nav-item">
-              HOME
-            </Link>
-          </span>
-
-          <span className="nav-item" onClick={() => setIsNavOpen(false)}>
-            <Link href="/fiscal" passHref className="nav-item">
-              FISCAL SPONSORSHIP
-            </Link>
-          </span>
-          <span
-            className="nav-item"
-            onClick={() => {
-              setIsNavOpen(false);
-              toggleContactModal();
-            }}
-          >
-            CONTACT
-          </span>
-
-          {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
             <Link href="/about" passHref className="nav-item">
               ABOUT
             </Link>
           </span> */}
-          {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                 <Link href="/screenings" passHref className="nav-item">
                   SCREENINGS AND EVENTS
                 </Link>
               </span> */}
-          {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
+            {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
                 <Link href="/workshops" passHref className="nav-item">
                   WORKSHOPS & CLASSES
                 </Link>
               </span> */}
-        </div>
-        {isLargeScreen && (
-          <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
-        )}
-      </nav>
-
-      {showContactModal && (
-        <div className="modal-contact">
-          <div className="modal-content-contact">
-            <span className="close" onClick={toggleContactModal}>
-              <i className="fa-solid fa-x"></i>
-            </span>
-            <Contact />
           </div>
-        </div>
+        </nav>
+
+        {showContactModal && (
+          <div className="modal-contact">
+            <div className="modal-content-contact">
+              <span className="close" onClick={toggleContactModal}>
+                <i className="fa-solid fa-x"></i>
+              </span>
+              <Contact />
+            </div>
+          </div>
+        )}
+      </div>
+      {isLargeScreen && (
+        <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
       )}
-    </div>
+    </>
   );
 };
 

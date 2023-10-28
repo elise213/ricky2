@@ -1,10 +1,12 @@
 .video-container {
   display: flex;
-  height: 10vh;
+  height: 1vh;
+  /* //I don't know what this is (above) but it works */
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin: 120px 150px 50px;
+  margin: 0 40px 0 80px;
+  min-height: 400px;
 
   -webkit-mask-image: url("../../public/img/CCEA2.png");
   mask-image: url("../../public/img/CCEA2.png");
@@ -13,7 +15,7 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-size: contain;
-  min-height: 300px !important;
+  /* min-height: 300px !important; */
   overflow-y: hidden;
 }
 
@@ -28,8 +30,8 @@
 
 @media screen and (max-width: 900px) {
   .video-container {
-    margin: 120px 70px !important;
-    min-height: 170px !important;
+    margin: 50px 0 40px 0 !important;
+    min-height: 220px !important;
   }
 }
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Video from "../app/components/Video";
 import styles from "./globals.css";
 import { Context } from "./context/appContext";
+import EmailList from "./components/EmailList";
 import FrontPageCard from "./components/FrontPageCard";
 import Footer from "./components/Footer";
 
@@ -47,6 +48,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className="home-body content">
+        <EmailList />
         <div className="video-about">
           <Video />
           <div className="about">

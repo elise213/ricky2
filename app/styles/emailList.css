@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 40px 35px 0 0;
 }
 
 .socials {
@@ -71,4 +72,11 @@
 
 .email-logo {
   width: 150px;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .email-logo {
+    display: block;
+  }
 }

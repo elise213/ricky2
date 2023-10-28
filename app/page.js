@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className="home-body content">
-        <EmailList />
+        {/* <EmailList /> */}
         <div className="video-about">
           <Video />
           <div className="about">

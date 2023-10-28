@@ -28,10 +28,10 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .video-container {
-    margin: 50px 0 40px 0 !important;
-    min-height: 220px !important;
+    margin: 90px 0 40px 0 !important;
+    min-height: 300px !important;
   }
 }
 

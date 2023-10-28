@@ -18,12 +18,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setIsLargeScreen(window.innerWidth > 900);
+    setIsLargeScreen(window.innerWidth > 1000);
   }, []);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 900);
+      setIsLargeScreen(window.innerWidth > 1000);
     };
 
     window.addEventListener("resize", handleResize);
@@ -35,7 +35,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (isLargeScreen) {
-      setIsNavOpen(true); // Always open if it's a large screen
+      setIsNavOpen(true);
     }
   }, [isLargeScreen]);
 
@@ -84,12 +84,14 @@ const Navbar = () => {
           )}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
+            {/* {isLargeScreen && ( */}
+            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
+            {/* )} */}
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
               <Link href="/" passHref className="nav-item">
                 HOME
               </Link>
             </span>
-
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
               <Link href="/fiscal" passHref className="nav-item">
                 FISCAL SPONSORSHIP
@@ -104,7 +106,6 @@ const Navbar = () => {
             >
               CONTACT
             </span>
-
             {/* <span className="nav-item" onClick={() => setIsNavOpen(false)}>
             <Link href="/about" passHref className="nav-item">
               ABOUT
@@ -120,6 +121,7 @@ const Navbar = () => {
                   WORKSHOPS & CLASSES
                 </Link>
               </span> */}
+            <EmailList />
           </div>
         </nav>
 
@@ -134,9 +136,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      {isLargeScreen && (
-        <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
-      )}
     </>
   );
 };

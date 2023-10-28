@@ -64,11 +64,11 @@
 }
 
 .navbar-logo {
-  position: absolute;
+  /* position: absolute; */
   right: 20px;
   top: 20px;
   width: 200px;
-  margin: 20px 30px 0 0;
+  margin: 40px 30px 0 0;
 }
 
 .navbar-logo:hover {
@@ -88,7 +88,7 @@
   position: absolute;
   left: -40px;
   top: 30px;
-  transition: left 0.3s ease !important;
+  transition: 0.3s ease !important;
   z-index: 100001;
   color: salmon;
 }
@@ -147,9 +147,11 @@
   right: 30vw;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
+.close-icon:hover,
+.close-icon:focus,
+.open-icon:hover,
+.open-icon:focus {
+  color: lightgreen;
   cursor: pointer;
 }
 
@@ -165,7 +167,7 @@
 }
 
 /* MIN WIDTH */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .new-navbar {
     width: 275px !important;
     position: fixed;
@@ -188,7 +190,7 @@
     flex-direction: column;
     padding: 5px;
     align-items: flex-start !important;
-    margin: 50px 0 0 20px;
+    margin: 0 0 0 20px;
     display: flex;
     box-shadow: none !important;
   }
@@ -222,7 +224,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .nav-container {
     height: 100vh;
     position: absolute;
@@ -230,11 +232,11 @@
 
   .new-navbar {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #333;
   }
 
   .new-navbar.open {
     left: 0;
-    background-color: #333;
   }
 
   .navbar-content {

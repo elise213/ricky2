@@ -23,7 +23,7 @@
 .navbar-content {
   display: flex;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .navbar-content.open {
@@ -59,7 +59,7 @@
 
 .navbar-logo {
   height: 70px;
-  margin: 20px 30px;
+  margin: 20px 30px 0 0;
 }
 
 .navbar-logo:hover {
@@ -140,6 +140,19 @@
   cursor: pointer;
 }
 
+/* MAX WIDTH */
+/* the navbar will be sticky at the top */
+@media screen and (min-width: 901px) {
+  .new-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10001;
+  }
+}
+
+/* MIN WIDTH */
 @media screen and (max-width: 900px) {
   .new-navbar {
     width: 275px !important;

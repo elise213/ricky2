@@ -245,6 +245,11 @@ textarea {
   margin-top: 50px;
 }
 
+.video-about {
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (max-width: 1300px) {
   .movie-scroll-labels p {
     font-size: 35px !important;
@@ -272,6 +277,12 @@ textarea {
 
   .movie-scroll-labels {
     margin-top: 80px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .video-about {
+    display: flex;
   }
 }
 

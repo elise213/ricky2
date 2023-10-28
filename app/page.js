@@ -47,14 +47,16 @@ const Home = () => {
   return (
     <main className={styles.main}>
       <div className="home-body content">
-        <Video />
-        <div className="about">
-          <span className="">
-            The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
-            nonprofit promoting high-quality cinematic experiences through
-            exhibition, workshops, and helping talented artists to overcome the
-            challenges unique to independent filmmaking.
-          </span>
+        <div className="video-about">
+          <Video />
+          <div className="about">
+            <span className="">
+              The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
+              nonprofit promoting high-quality cinematic experiences through
+              exhibition, workshops, and helping talented artists to overcome
+              the challenges unique to independent filmmaking.
+            </span>
+          </div>
         </div>
         <div className="screenings-div">
           <div className="movie-scroll-labels">

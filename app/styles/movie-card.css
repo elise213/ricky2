@@ -66,15 +66,6 @@ p {
   letter-spacing: 1px;
 }
 
-.movie {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 10px;
-  z-index: 4;
-  position: relative;
-  object-fit: cover;
-  margin: 0;
-}
-
 .modal-header {
   display: flex;
   justify-content: center;
@@ -168,7 +159,6 @@ body.modal-open {
 .review {
   font-size: medium;
   font-family: "Urbanist", sans-serif;
-  /* letter-spacing: 0.8px; */
   margin: 15px 80px 15px 80px;
   line-height: 2;
   display: flex;
@@ -187,11 +177,6 @@ body.modal-open {
   .review {
     margin: 20px 50px !important;
     font-size: medium !important;
-  }
-
-  .movie {
-    width: 180px !important;
-    height: 260px !important;
   }
 
   .modal-content ul {

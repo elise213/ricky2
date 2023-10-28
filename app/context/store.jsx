@@ -58,20 +58,20 @@ const getState = ({ getStore, getActions, setStore }) => {
           instruction: "The next workshop is January 15th.",
           instruction2: "Please email us at info@ccearts.org to be included.",
         },
-        {
-          title: "Begotten",
-          year: "1989",
-          Runtime: "1h 18m",
-          Director: "E. Elias Merhige",
-          image: "/img/begotten2.png",
-          category: "horror",
-          bullet: "October 30th in Austin TX",
-          description:
-            "Begotten (1989) is a disturbing vision of sacrifice, death, and rebirth that borders on the unwatchable. The story behind its creation — and its creator — is one that descends deep into the occult, alternate realities, and how art is a ritualized ceremony of catharsis... Begotten’s unflinching eye records death and rebirth in gut-wrenching clarity...It’s a spiritual purge of the toxins of human existence. Begotten has to be seen to be believed, although the stark, bleached-out white and inky black contrast at times makes it impossible to discern what’s haunting your screen. It’s like the art of Franz Kline and Francis Bacon brought into horrific, pulsating life. -- Marc Paterson, Certified Forgotten",
-          instruction: "October 30 at 7:30pm",
-          instruction2:
-            "If you're squeamish you should avoid this like the plague; others may find it hard to shake off the artistry and originality of this visionary effort. And if you're looking to be freaked out you shouldn't pass it up. -- Jonathan Rosenbaum",
-        },
+        // {
+        //   title: "Begotten",
+        //   year: "1989",
+        //   Runtime: "1h 18m",
+        //   Director: "E. Elias Merhige",
+        //   image: "/img/begotten2.png",
+        //   category: "horror",
+        //   bullet: "October 30th in Austin TX",
+        //   description:
+        //     "Begotten (1989) is a disturbing vision of sacrifice, death, and rebirth that borders on the unwatchable. The story behind its creation — and its creator — is one that descends deep into the occult, alternate realities, and how art is a ritualized ceremony of catharsis... Begotten’s unflinching eye records death and rebirth in gut-wrenching clarity...It’s a spiritual purge of the toxins of human existence. Begotten has to be seen to be believed, although the stark, bleached-out white and inky black contrast at times makes it impossible to discern what’s haunting your screen. It’s like the art of Franz Kline and Francis Bacon brought into horrific, pulsating life. -- Marc Paterson, Certified Forgotten",
+        //   instruction: "October 30 at 7:30pm",
+        //   instruction2:
+        //     "If you're squeamish you should avoid this like the plague; others may find it hard to shake off the artistry and originality of this visionary effort. And if you're looking to be freaked out you shouldn't pass it up. -- Jonathan Rosenbaum",
+        // },
         // {
         //   title: "The Texas Chain Saw Massacre",
         //   year: "1974",

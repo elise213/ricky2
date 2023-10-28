@@ -85,7 +85,7 @@ main {
 }
 
 .about {
-  margin: 0px 200px;
+  margin: 0px 150px;
   text-align: justify;
   max-width: 700px;
 }
@@ -93,7 +93,7 @@ main {
 .about span {
   font-family: "Urbanist", sans-serif;
   line-height: 2;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 1.2px;
   font-weight: 400;
 }
@@ -197,18 +197,11 @@ textarea {
   padding: 0;
 }
 
-@media screen and (max-width: 1100px) {
-  .about {
-    margin: 0px 150px !important;
-  }
-}
-
 #contactTextArea {
   min-height: 100px;
 }
 
 .movie-scroll-labels {
-  margin-top: 120px;
   display: flex;
   justify-content: center;
 }
@@ -247,7 +240,24 @@ textarea {
 .scroll-search-results::-webkit-scrollbar-thumb {
   background: transparent;
 }
-@media screen and (max-width: 900px) {
+
+.screenings-div {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+  .movie-scroll-labels p {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about {
+    margin: 0px 150px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .about {
     margin: 0 80px !important;
   }
@@ -257,7 +267,7 @@ textarea {
   }
 
   .movie-scroll-labels p {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
 
   .movie-scroll-labels {

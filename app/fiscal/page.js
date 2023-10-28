@@ -16,14 +16,14 @@ const Fiscal = () => {
       <div className="fiscal-about">
         <span className="">
           CCEA is committed to helping talented independent artists make films.
-          Our fiscal sponsorship allows you to solicit and receive
-          tax-deductible donations from individuals and gifts from foundations
-          in support of your projects. Please read
+          Our fiscal sponsorship program allows filmmakers to solicit and
+          receive tax-deductible donations from individuals, and gifts from
+          foundations, to make films. Please read our
           <Link href="/fiscalFAQ" passHref className="FAQ-link">
             {" "}
-            this FAQ{" "}
+            Fiscal Sponsorship FAQ{" "}
           </Link>
-          before you apply to the program.
+          before applying to the program.
         </span>
         <br />
         <br />

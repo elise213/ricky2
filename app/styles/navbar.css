@@ -282,6 +282,23 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .close-icon,
+  .open-icon {
+    transition: left 0.3s ease;
+    left: -50px !important;
+    top: 15px !important;
+  }
+
+  .close-icon.open {
+    left: 235px !important;
+  }
+
+  .open-icon.closed {
+    left: 300px !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .open-icon {
     top: 0;

@@ -92,3 +92,21 @@
     width: 160px !important;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .highlights {
+    width: 110px !important;
+    padding: 0 !important;
+    height: 180px !important;
+  }
+
+  .sticker {
+    left: -25px !important;
+    top: -40px !important;
+  }
+
+  .learn-more-2 {
+    right: -50px !important;
+    bottom: -55px !important;
+  }
+}

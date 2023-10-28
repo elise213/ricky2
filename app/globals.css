@@ -215,6 +215,7 @@ textarea {
   color: black;
   font-family: "AwsumSans", sans-serif;
   margin-bottom: 20px;
+  font-weight: 400 !important;
 }
 
 .scroll-search-results {
@@ -265,6 +266,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .about {
+    margin: 30px 100px !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about span {
     font-size: medium;
@@ -277,7 +284,7 @@ textarea {
 
 @media screen and (max-width: 500px) {
   .about {
-    margin: 20px 30px !important;
+    margin: 0 60px 20px 60px !important;
   }
 
   .about span {

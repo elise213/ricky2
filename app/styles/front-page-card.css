@@ -58,3 +58,10 @@ body.modal-open {
     font-size: medium !important;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .movie {
+    width: 120px !important;
+    height: 190px !important;
+  }
+}

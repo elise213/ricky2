@@ -7,7 +7,7 @@ import Contact from "./Contact";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [showContactModal, setShowContactModal] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 900);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -16,6 +16,10 @@ const Navbar = () => {
   const toggleContactModal = () => {
     setShowContactModal(!showContactModal);
   };
+
+  useEffect(() => {
+    setIsLargeScreen(window.innerWidth > 900);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

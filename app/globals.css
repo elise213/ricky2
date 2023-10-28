@@ -1,5 +1,5 @@
-/* ___________________________________________________________________GLOBAL */
-:root {
+___________________________________________________________________GLOBAL
+  :root {
   --color1: rgb(251, 120, 106);
   --color2: rgb(246, 179, 91);
   --color3: rgb(153, 161, 168);
@@ -243,10 +243,6 @@ textarea {
   background: transparent;
 }
 
-/* .screenings-div {
-  margin-top: 50px;
-} */
-
 .video-about {
   display: flex;
   width: 100%;
@@ -259,21 +255,8 @@ textarea {
   }
 }
 
-/* @media screen and (max-width: 1100px) {
-  .about {
-    margin: 0px 80px !important;
-  }
-} */
-
 @media screen and (max-width: 1000px) {
-  /* /* .about {
-    margin: 0 80px !important;
-  } */
-
-  /* .about span {
-    font-size: large;
-  } */
-  */ .movie-scroll-labels p {
+  .movie-scroll-labels p {
     font-size: 30px !important;
   }
 
@@ -281,12 +264,6 @@ textarea {
     margin-top: 80px !important;
   }
 }
-
-/* @media screen and (max-width: 900px) {
-  .video-about {
-    flex-direction: column;
-  }
-} */
 
 @media screen and (max-width: 600px) {
   .about span {

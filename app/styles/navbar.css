@@ -42,7 +42,6 @@
 
 .nav-item,
 .nav-item a {
-  /* font-family: "Urbanist", sans-serif; */
   font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--color1);

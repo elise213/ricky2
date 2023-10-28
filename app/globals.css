@@ -85,7 +85,7 @@ main {
 }
 
 .about {
-  margin: 50px 250px;
+  margin: 50px 240px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -261,7 +261,7 @@ textarea {
   }
 
   .movie-scroll-labels {
-    margin-top: 80px !important;
+    margin-top: 0 !important;
   }
 }
 

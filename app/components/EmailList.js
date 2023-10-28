@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import styles from "../styles/emailList.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { Context } from "../context/appContext";
 
 const EmailList = () => {
+  const { store, actions } = useContext(Context);
   const form = useRef();
   const SERVICE_ID = "service_betnze8";
   const TEMPLATE_ID = "template_99iigjc";
@@ -34,7 +36,7 @@ const EmailList = () => {
 
   return (
     <div className="email-list-container">
-      <img className="email-logo" src="/img/LOGO2.png" />
+      {/* <img className="email-logo" src="/img/LOGO2.png" /> */}
       {/* <div className="socials">
         <i className="fa-brands fa-instagram" />
         <i className="fa-brands fa-twitter" />

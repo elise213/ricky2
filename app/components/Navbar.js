@@ -4,10 +4,9 @@ import styles from "../styles/navbar.css";
 import EmailList from "./EmailList";
 import Contact from "./Contact";
 
-const Navbar = () => {
+const Navbar = ({ isLargeScreen }) => {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [showContactModal, setShowContactModal] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -16,28 +15,6 @@ const Navbar = () => {
   const toggleContactModal = () => {
     setShowContactModal(!showContactModal);
   };
-
-  useEffect(() => {
-    setIsLargeScreen(window.innerWidth > 1000);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 1000);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isLargeScreen) {
-      setIsNavOpen(true);
-    }
-  }, [isLargeScreen]);
 
   useEffect(() => {
     if (!isLargeScreen) {
@@ -53,6 +30,12 @@ const Navbar = () => {
       };
     }
   }, [isNavOpen, isLargeScreen]);
+
+  useEffect(() => {
+    if (isLargeScreen) {
+      setIsNavOpen(true);
+    }
+  }, [isLargeScreen]);
 
   useEffect(() => {
     const body = document.body;
@@ -84,9 +67,13 @@ const Navbar = () => {
           )}
 
           <div className={`navbar-content ${isNavOpen ? "open" : ""}`}>
-            {/* {isLargeScreen && ( */}
-            <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" />
-            {/* )} */}
+            {!isLargeScreen && (
+              <img
+                src="/img/logo2.png"
+                alt="CCEA Logo"
+                className="navbar-logo"
+              />
+            )}
             <span className="nav-item" onClick={() => setIsNavOpen(false)}>
               <Link href="/" passHref className="nav-item">
                 HOME
@@ -121,7 +108,7 @@ const Navbar = () => {
                   WORKSHOPS & CLASSES
                 </Link>
               </span> */}
-            <EmailList />
+            {!isLargeScreen && <EmailList />}
           </div>
         </nav>
 

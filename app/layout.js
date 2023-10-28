@@ -1,4 +1,5 @@
 "use client";
+import React, { useContext, useEffect, useState } from "react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
@@ -6,24 +7,30 @@ import Footer from "./components/Footer";
 import injectContext from "./context/appContext";
 const inter = Inter({ subsets: ["latin"] });
 import "font-awesome/css/font-awesome.min.css";
+import { Context } from "./context/appContext";
 
 function RootLayout({ children }) {
+  const { store, actions } = useContext(Context);
+
+  useEffect(() => {
+    actions.initializeScreenSize();
+  }, []);
+
+  useEffect(() => {
+    const handleResize = actions.updateScreenSize;
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        ></link>
-        <link
-          href="https://fonts.cdnfonts.com/css/awsumsans"
-          rel="stylesheet"
-        ></link>
-      </head>
+      <head>{/* ... */}</head>
       <body className={inter.className}>
-        <Navbar />
+        <Navbar isLargeScreen={store.isLargeScreen} />
         {children}
-        {/* <Footer /> */}
+        <Footer isLargeScreen={store.isLargeScreen} />
       </body>
     </html>
   );

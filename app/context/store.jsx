@@ -2,7 +2,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
-      msg: "its working",
+      isLargeScreen: false,
+      isClient: false,
+      windowWidth: 0,
       content: [
         {
           title: "Apocalypse Now",
@@ -202,7 +204,24 @@ const getState = ({ getStore, getActions, setStore }) => {
         // },
       ],
     },
-    actions: {},
+    actions: {
+      // ... other actions
+
+      initializeScreenSize: () => {
+        setStore({
+          isLargeScreen: window.innerWidth > 1000,
+          isClient: true,
+          windowWidth: window.innerWidth,
+        });
+      },
+
+      updateScreenSize: () => {
+        setStore({
+          isLargeScreen: window.innerWidth > 1000,
+          windowWidth: window.innerWidth,
+        });
+      },
+    },
   };
 };
 

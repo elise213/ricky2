@@ -6,7 +6,6 @@ import styles from "./globals.css";
 import { Context } from "./context/appContext";
 import EmailList from "./components/EmailList";
 import FrontPageCard from "./components/FrontPageCard";
-import Footer from "./components/Footer";
 
 const Home = () => {
   const { store, actions } = useContext(Context);
@@ -15,11 +14,6 @@ const Home = () => {
   const [isClient, setIsClient] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
-
-  useEffect(() => {
-    setIsClient(true);
-    setWindowWidth(window.innerWidth);
-  }, []);
 
   const checkOverflow = () => {
     if (!scrollRef.current) return;
@@ -30,7 +24,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    if (!isClient) return; // Skip if component is not mounted yet
+    if (!isClient) return;
 
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -90,7 +84,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 };

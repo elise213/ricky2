@@ -151,7 +151,8 @@
 .close-icon:focus,
 .open-icon:hover,
 .open-icon:focus {
-  color: lightgreen;
+  /* color: lightgreen; */
+  color: rgb(177, 135, 177);
   cursor: pointer;
 }
 
@@ -181,7 +182,7 @@
   }
 
   .new-navbar.open {
-    background-color: #333;
+    background-color: #464646;
     left: 0 !important;
     transition: left 0.3s ease;
   }
@@ -207,6 +208,10 @@
   .close-icon,
   .open-icon {
     left: -40px;
+  }
+
+  .close-icon {
+    font-size: 30px;
   }
 
   .close-icon.open {

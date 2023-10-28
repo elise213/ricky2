@@ -84,12 +84,20 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+.email-list-container {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
   .email-logo {
     display: block;
   }
 
+  .email-list-container {
+    margin: 20px 0 !important;
+  }
+
   .email-list-form {
-    width: 100%;
+    width: 100% !important;
   }
 }

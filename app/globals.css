@@ -121,16 +121,17 @@ main {
 }
 
 .about {
-  margin: 50px 240px;
+  margin: 30px 0 50px 0;
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 60vw;
 }
 
 .about span {
   font-family: "Urbanist", sans-serif;
   line-height: 2;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1.2px;
   font-weight: 400;
   text-align: justify;
@@ -239,19 +240,43 @@ textarea {
   min-height: 100px;
 }
 
-.movie-scroll-labels {
+/* .movie-scroll-labels {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.movie-scroll-labels p {
+.movie-scroll-labels span {
   font-size: 40px;
   letter-spacing: 2px;
-  margin: 0;
   color: black;
   font-family: "AwsumSans", sans-serif;
   margin-bottom: 20px;
   font-weight: 400 !important;
+} */
+
+.movie-scroll-labels {
+  margin: 0 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "AwsumSans", sans-serif;
+  justify-content: center;
+}
+
+.separator {
+  margin: 0 10px; /* Add some space between "Workshops" and "Events" */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .movie-scroll-labels {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .separator {
+    margin: 5px 0; /* Adjust the spacing for stacked elements */
+  }
 }
 
 .scroll-search-results {
@@ -284,27 +309,56 @@ textarea {
   display: flex;
   width: 100%;
   flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .about {
+    /* margin: 50px 0px; */
+    width: 65vw !important;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-  .movie-scroll-labels p {
+  .movie-scroll-labels span {
     font-size: 35px !important;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .about {
+    /* margin: 50px 0px; */
+    width: 70vw !important;
+  }
+}
+
 @media screen and (max-width: 1000px) {
-  .movie-scroll-labels p {
+  .movie-scroll-labels span {
     font-size: 30px !important;
   }
 
   .movie-scroll-labels {
     margin-top: 0 !important;
   }
+
+  .about {
+    width: 60vw !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .about {
-    margin: 30px 100px !important;
+    width: 65vw !important;
+    margin: 0 0 50px 0 !important;
+  }
+  .about span {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    width: 80vw !important;
   }
 }
 
@@ -313,21 +367,25 @@ textarea {
     font-size: medium;
     line-height: 1.8;
   }
-  .movie-scroll-labels p {
+  .movie-scroll-labels span {
     font-size: 25px !important;
+  }
+  /* .movie-scroll-labels {
+    /* flex-direction: column !important; */
+  /* margin: 0 60px;
+    flex-direction: column;
+  } */
+  */ .movie-scroll-labels span {
+    margin: 0 !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .about {
-    margin: 0 60px 20px 60px !important;
+    margin: 0 0 35px 0 !important;
   }
 
   .about span {
     font-size: 14px;
-  }
-
-  .movie-scroll-labels p {
-    font-size: 18px !important;
   }
 }

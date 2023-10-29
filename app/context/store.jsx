@@ -205,8 +205,6 @@ const getState = ({ getStore, getActions, setStore }) => {
       ],
     },
     actions: {
-      // ... other actions
-
       initializeScreenSize: () => {
         setStore({
           isLargeScreen: window.innerWidth > 1000,

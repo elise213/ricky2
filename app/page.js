@@ -15,6 +15,8 @@ const Home = () => {
   const [isOverflowing, setIsOverflowing] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
 
+  console.log(store.windowWidth);
+
   const checkOverflow = () => {
     if (!scrollRef.current) return;
 
@@ -49,15 +51,25 @@ const Home = () => {
             <span className="">
               The Center for Cinematic and Experimental Arts (CCEA) is a 501(c)3
               nonprofit promoting high-quality cinematic experiences through
-              exhibition, workshops, and helping talented artists to overcome
-              the challenges unique to independent filmmaking.
+              exhibition, workshops, and helping talented artists overcome the
+              challenges unique to independent filmmaking.
             </span>
           </div>
         </div>
         <div className="screenings-div">
+          {/* {store.windowWidth > 500 ? ( */}
+          {/* <div className="movie-scroll-labels">
+              <span>Upcoming Workshops and Events</span>
+            </div>
+          ) : ( */}
           <div className="movie-scroll-labels">
-            <p>Upcoming Workshops and Events</p>
+            <span>Upcoming Workshops</span>
+            <span className="separator"></span>
+            <span>and Events</span>
           </div>
+
+          {/* )} */}
+
           <div
             ref={scrollRef}
             className="scroll-search-results"

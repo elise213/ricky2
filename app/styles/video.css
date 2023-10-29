@@ -31,7 +31,6 @@
 @media screen and (max-width: 900px) {
   .video-container {
     max-width: 85vw !important;
-
     margin: 150px 0 0 0 !important;
   }
 }

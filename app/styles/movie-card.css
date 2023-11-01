@@ -4,6 +4,19 @@ p {
   font-family: "Urbanist", sans-serif;
 }
 
+.close-mc {
+  padding: 0;
+  margin: 20px 0 0 0;
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+  align-self: flex-end;
+  color: red;
+  position: absolute;
+  right: 5vw;
+  top: 1vh;
+}
+
 .trailer-container {
   position: relative;
   margin: 25px;
@@ -91,8 +104,6 @@ p {
 }
 
 .modal-content {
-  min-width: 30vw;
-  max-width: 900px;
   border-radius: 12px;
 }
 
@@ -129,6 +140,10 @@ p {
   z-index: 9999;
   border: none;
   background-color: transparent;
+  width: 90%;
+  z-index: 9999999999;
+  min-width: 30vw;
+  max-width: 900px;
 }
 
 .modal-overlay {

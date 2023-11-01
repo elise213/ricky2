@@ -54,7 +54,7 @@ const MovieCard = (props) => {
               <div className="close-div">
                 <button
                   type="button"
-                  className="close"
+                  className="close-mc"
                   onClick={props.toggleModal}
                   aria-label="Close"
                 >
@@ -63,7 +63,6 @@ const MovieCard = (props) => {
               </div>
             </div>
             <div className="modal-body">
-              {/* <div className="poster-review-div"> */}
               <div className="poster-div">
                 {/* {console.log("STICKER PROPS", props)} */}
                 {/* <div className="sticker-modal">
@@ -85,12 +84,10 @@ const MovieCard = (props) => {
                   )}
                 </div>
               </div>
-              {/* <div className="review-div"> */}
+
               {props.result.description && (
                 <p className="review">{props.result.description}</p>
               )}
-              {/* </div> */}
-              {/* </div> */}
               {trailerUrl ? (
                 <div className="streaming-trailer-div">
                   <div className="trailer-container">

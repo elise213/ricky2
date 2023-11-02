@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import Video from "../app/components/Video";
+import Video from "./components/Video";
 import styles from "./globals.css";
 import { Context } from "./context/appContext";
 import EmailList from "./components/EmailList";

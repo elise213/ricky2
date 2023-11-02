@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../fiscalFAQ/fiscalFAQ.css";
+import styles from "./fiscalFAQ.css";
 
 const page = () => {
   return (

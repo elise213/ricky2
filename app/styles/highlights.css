@@ -32,7 +32,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  /* height: 100%; */
 }
 
 .sticker {
@@ -49,7 +48,6 @@
 }
 
 .learn-more-2 {
-  /* background-color: var(--color5); */
   background-color: black;
   color: rgb(252, 80, 60);
   font-size: medium;
@@ -62,7 +60,6 @@
   width: 75px;
   border-radius: 50%;
   z-index: 4;
-  /* position: absolute; */
   position: relative;
   right: -80px;
   bottom: -35px;
@@ -71,10 +68,10 @@
 
 .more-button {
   position: absolute;
-  bottom: 10px; /* Adjust this value as needed to place the button at the desired location */
+  bottom: 10px;
   width: 100%;
   display: flex;
-  justify-content: center; /* Center the button horizontally */
+  justify-content: center;
 }
 
 .learn-more-2:hover {

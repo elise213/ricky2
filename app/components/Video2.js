@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "../styles/video.css";
 
-const Video = () => {
+const Video2 = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -13,18 +13,17 @@ const Video = () => {
 
   return (
     <div
-      className="video-container"
+      className="video-container2"
       style={{
-        minHeight: "450px",
+        minHeight: "350px",
       }}
     >
-      <div className="mask-reference"></div>
-      <video autoPlay loop muted playsInline className="video" ref={videoRef}>
-        <source src="/img/storms.mp4" type="video/mp4" />
+      <video autoPlay loop muted playsInline className="video2" ref={videoRef}>
+        <source src="/img/video1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
   );
 };
 
-export default Video;
+export default Video2;

@@ -5,15 +5,7 @@ import EmailList from "./EmailList";
 
 const Footer = (isLargeScreen) => (
   <footer className="footer">
-    <div className="footer-centered larger-footer-div">
-      {/* {isLargeScreen && ( */}
-      <>
-        {/* <img src="/img/logo2.png" alt="CCEA Logo" className="navbar-logo" /> */}
-        {/* <EmailList /> */}
-      </>
-      {/* )} */}
-      <p className="foot">© 2023 Center for Cinematic and Experimental Arts</p>
-    </div>
+    <p className="foot">© 2024 Ricky Berrin Esq.</p>
   </footer>
 );
 

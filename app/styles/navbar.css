@@ -37,7 +37,6 @@
 
 .nav-item,
 .nav-item a {
-  font-weight: 600;
   letter-spacing: 1.5px;
   color: var(--color1);
   text-decoration: none;
@@ -83,7 +82,7 @@
   left: -40px;
   top: 30px;
   transition: 0.3s ease !important;
-  z-index: 100001;
+  z-index: 999;
   color: salmon;
 }
 
@@ -103,7 +102,6 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  position: absolute;
   top: 0;
   position: fixed;
   z-index: 9998;
@@ -119,8 +117,8 @@
 .modal-content-contact {
   max-width: 850px;
   border-radius: 3px;
-  background-color: transparent;
-  width: 70vw;
+  /* background-color: transparent; */
+  /* width: 70vw; */
   z-index: 9999;
 }
 
@@ -150,108 +148,6 @@
 }
 
 /* MAX WIDTH */
-@media screen and (max-width: 1000px) {
-  .new-navbar {
-    width: 275px !important;
-    position: fixed;
-    top: 0;
-    left: -275px !important;
-    height: 100%;
-    z-index: 10000;
-    display: flex;
-    justify-content: flex-start;
-    transition: left 0.3s ease;
-  }
-
-  .new-navbar.open {
-    background-color: #464646;
-    left: 0 !important;
-    transition: left 0.3s ease;
-  }
-
-  .navbar-content {
-    flex-direction: column;
-    padding: 5px;
-    align-items: flex-start !important;
-    margin: 0 0 0 20px;
-    display: flex;
-    box-shadow: none !important;
-  }
-
-  .nav-item {
-    margin: 15px 0;
-  }
-
-  .nav-container {
-    height: 100vh;
-    position: absolute;
-  }
-
-  .close-icon,
-  .open-icon {
-    left: -40px;
-  }
-
-  .close-icon {
-    font-size: 30px;
-  }
-
-  .close-icon.open {
-    left: 235px;
-  }
-
-  .open-icon.closed {
-    left: 300px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .open-icon {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .nav-container {
-    height: 100vh;
-    position: absolute;
-  }
-
-  .new-navbar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #333;
-  }
-
-  .new-navbar.open {
-    left: 0;
-  }
-
-  .navbar-content {
-    flex-direction: column;
-    padding: 5px;
-  }
-
-  .nav-item {
-    margin: 15px 0;
-  }
-
-  .close-icon,
-  .open-icon {
-    transition: left 0.3s ease;
-  }
-
-  .close-icon {
-    left: -40px !important;
-  }
-
-  .close-icon.open {
-    left: 235px !important;
-  }
-
-  .open-icon.closed {
-    left: 300px !important;
-  }
-}
 
 @media screen and (max-width: 700px) {
   .modal-content-contact {

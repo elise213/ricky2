@@ -33,7 +33,7 @@ const Screenings = () => {
             <li
               key={i}
               style={
-                i === store.movies.length - 1 ? { paddingRight: "35px" } : {}
+                i === store.events.length - 1 ? { paddingRight: "35px" } : {}
               }
             >
               <div>

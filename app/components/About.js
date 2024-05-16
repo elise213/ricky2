@@ -3,8 +3,15 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="about-div">
+    <>
       <div className="ricky-about-div">
+        <Image
+          className="ricky-img"
+          src="/img/IMG_5260.jpg"
+          alt="Ricky's Image"
+          width={180}
+          height={200}
+        />
         <p className="ricky-about">
           Ricky has earned degrees from the University of Pennsylvania (BA),
           Duke University (Law), and New York University (MBA). He has been
@@ -15,13 +22,6 @@ const About = () => {
           Persuasion Machines, featuring will.i.am, which premiered at the
           Sundance Film Festival.
         </p>
-        <Image
-          className="ricky-img"
-          src="/img/IMG_5260.jpg"
-          alt="Ricky's Image"
-          width={200}
-          height={200}
-        />
       </div>
       <div className="projects">
         <Image
@@ -50,7 +50,7 @@ const About = () => {
         />
         <Image className="project" src="/img/LP.png" width={180} height={250} />
       </div>
-    </div>
+    </>
   );
 };
 

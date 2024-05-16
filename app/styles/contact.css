@@ -1,6 +1,6 @@
 .contact-page {
   display: flex;
-  margin-bottom: 100px;
+  padding: 20px;
 }
 
 .form-control,

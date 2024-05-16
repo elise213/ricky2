@@ -36,17 +36,16 @@ body.no-scroll {
   justify-content: center;
   width: 100%;
   padding: 10px;
+  letter-spacing: 1.2px;
 }
 
 .send-button:hover {
-  background-color: lightgreen;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body,
 label {
   font-family: "Urbanist", sans-serif;
-  color: black;
 }
 
 main {
@@ -55,14 +54,6 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 100vh !important;
-}
-
-.projects {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px;
 }
 
 .home-body {
@@ -75,42 +66,35 @@ main {
   align-items: center;
 }
 
-.ricky-about {
-  font-size: 18px;
-  padding: 20px;
-  line-height: 40px;
-}
+/* .about-projects-div {
+  width: 100%;
+  box-sizing: border-box;
+} */
 
 .ricky-about-div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.about-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden; /* Clear the float */
   padding: 20px;
   box-sizing: border-box;
 }
-.about {
-  margin: 30px 0 50px 0;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 60vw;
+
+.ricky-img {
+  float: right;
+  margin: 0 0 0 20px;
 }
 
-.about span {
-  font-family: "Urbanist", sans-serif;
-  line-height: 2;
-  font-size: 20px;
-  letter-spacing: 1.2px;
-  font-weight: 400;
+.ricky-about {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
   text-align: justify;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .page-container,
@@ -125,144 +109,6 @@ main {
   display: flex;
   justify-content: center;
 }
-
-.details-column,
-.page-container,
-.profile-container,
-.details {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.card-title-div {
-  display: flex;
-  align-items: center;
-}
-
-.card-body {
-  padding: 0px;
-  height: 45% !important;
-  display: flex;
-  justify-content: center;
-}
-
-.card-img {
-  object-fit: contain;
-}
-
-.user-profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 10%;
-  margin-right: 25px;
-}
-
-.favorites-container,
-.page-container,
-.profile-container,
-.details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.all-rights-div {
-  margin: 0px;
-  padding: 20px;
-}
-
-.dropdown-toggle {
-  border: solid 1px lime !important;
-  background-color: rgb(172, 172, 172) !important;
-  color: black !important;
-  box-shadow: none !important;
-  border-radius: 0%;
-}
-
-input,
-textarea {
-  font-family: "Urbanist", sans-serif;
-  letter-spacing: 2px;
-}
-
-.input[type="checkbox"]:checked {
-  background-color: lightgreen !important;
-  color: #ffffff !important;
-}
-
-.input[type="checkbox"]:after {
-  box-shadow: none !important;
-}
-
-.form-check-input {
-  background-color: white;
-  border: solid black 1px;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.offering-details-page {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-}
-
-#contactTextArea {
-  min-height: 100px;
-}
-
-.separator {
-  margin: 0 10px;
-}
-
-/* Media query for small screens */
-@media screen and (max-width: 600px) {
-  .movie-scroll-labels {
-    flex-direction: column;
-  }
-
-  .separator {
-    margin: 5px 0;
-  }
-}
-
-.scroll-search-results {
-  width: 100vw;
-  overflow-x: scroll !important;
-  overflow-y: hidden;
-  display: flex;
-}
-
-.scroll-search-results ul {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 80px;
-  list-style-type: none;
-}
-
-.scroll-search-results::-webkit-scrollbar {
-  width: 12px;
-}
-
-.scroll-search-results::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scroll-search-results::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
-/* .video-about {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-} */
 
 @media screen and (max-width: 1400px) {
   .about {
